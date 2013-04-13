@@ -1,0 +1,37 @@
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\NaturalLanguageProceessor.exe.config
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\NaturalLanguageProceessor.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\NaturalLanguageProceessor.pdb
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\DataModel.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\framework.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\MySql.Data.dll
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\Oracle.DataAccess.dll
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\Npgsql.dll
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\System.Data.SQLite.dll
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\DataModel.pdb
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\framework.pdb
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProcessor.csprojResolveAssemblyReference.cache
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProcessor.Form1.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProcessor.Properties.Resources.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProcessor.Test.NaturalFromInternal.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProcessor.csproj.GenerateResource.Cache
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProceessor.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProceessor.pdb
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\NaturalLanguageProceessor.exe.config
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\NaturalLanguageProceessor.exe
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\NaturalLanguageProceessor.pdb
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\DataModel.exe
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\framework.exe
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\MySql.Data.dll
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\Oracle.DataAccess.dll
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\System.Data.SQLite.dll
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\Npgsql.dll
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\DataModel.pdb
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\framework.pdb
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProcessor.Form1.resources
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProcessor.Properties.Resources.resources
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProcessor.Test.NaturalFromInternal.resources
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProceessor.exe
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProceessor.pdb

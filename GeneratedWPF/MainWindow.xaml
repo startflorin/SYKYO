@@ -1,0 +1,8 @@
+﻿<Window x:Class="GeneratedWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Topmost="False" WindowStartupLocation="CenterScreen" IsManipulationEnabled="True">
+    <Grid>
+        <DataGrid AutoGenerateColumns="True" Height="124" HorizontalAlignment="Left" Margin="270,163,0,0" Name="dataGrid1" VerticalAlignment="Top" Width="148" />
+    </Grid>
+</Window>

@@ -1,0 +1,218 @@
+﻿CREATE USER 'sykyo_test'@'localhost' IDENTIFIED BY 'start1';
+GRANT ALL ON *.* TO 'sykyo_test'@'localhost';
+
+CREATE SCHEMA `rpro0001_cabinet` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+use `rpro0001_cabinet`;
+
+delimiter $$
+
+CREATE TABLE IF NOT EXISTS `simbs` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `IR` int(11) DEFAULT NULL,
+  `BR` varchar(32) DEFAULT NULL,
+  `INT` varchar(32) DEFAULT NULL,
+  `En` varchar(300) DEFAULT NULL,
+  `Fr` varchar(300) DEFAULT NULL,
+  `Ge` varchar(300) DEFAULT NULL,
+  `Ro` varchar(300) DEFAULT NULL,
+  `Link` varchar(300) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='Simbols'$$
+
+
+delimiter $$
+
+CREATE TABLE IF NOT EXISTS `srel` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `IR` int(11) NOT NULL,
+  `Var` int(11) NOT NULL,
+  `En` varchar(60) NOT NULL,
+  `Fr` varchar(60) NOT NULL DEFAULT '-',
+  `Ro` varchar(60) NOT NULL DEFAULT '-',
+  `Ge` varchar(60) NOT NULL DEFAULT '-',
+  `Info` varchar(300) NOT NULL,
+  `IR2` int(11) NOT NULL,
+  `Var2` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8$$
+
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+1,1,100,"is exemplified by","-","este exemplificat prin","-","class is instantialised as",9999,1
+);
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+2,9999,1,"is a","-", "este","-","is instance of class",1,100
+);
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+3,2,100,"include","-","include","-","set has as element",9998,1
+);
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+4,9998,1,"is included in","-","este inclus in","-","is element in set",2,100
+);
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+5,3,100,"have","-","are","-","are urmatoarele proprietati",9997,1
+);
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+6,9997,1,"is property of","-","apartine la","-","este proprietate pentru",3,100
+);
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+7,5,10,"increase","-","sporeste","-","influence",9995,-10
+);
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+8,5,-10,"decrease","-","diminua","-","influence",9995,10
+);
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+9,9995,-10,"is decreased by","-","este diminuat de catre","-","-",5,10
+);
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+10,9995,10,"is increased by","-","este sporit de catre","-","-",5,-10
+);
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+11,10,100,"=jjjjjjkjkjkkj","=","=","=","-",9990,1
+);
+INSERT INTO `rpro0001_cabinet`.`srel`
+(`ID`,
+`IR`,
+`Var`,
+`En`,
+`Fr`,
+`Ro`,
+`Ge`,
+`Info`,
+`IR2`,
+`Var2`)
+VALUES
+(
+12,9990,1,"xopokliujilhi","x","x","x","-",10,100
+);

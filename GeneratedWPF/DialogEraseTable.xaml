@@ -1,0 +1,9 @@
+﻿<Window x:Class="GeneratedWPF.DialogEraseTable"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Recreate Existent Tables ?" Height="63" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Content="Yes" IsCancel="False" Click="ButtonYes_Click" Margin="0,0,194,0" />
+        <Button Content="No" IsCancel="True" IsDefault="True" Click="ButtonNo_Click" Margin="204,0,0,0" />
+    </Grid>
+</Window>

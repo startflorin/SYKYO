@@ -1,0 +1,247 @@
+﻿-- Unable to Render DDL with DBMS_METADATA using internal generator.
+CREATE TABLE SIMBS
+(
+  ID NUMBER NOT NULL,
+  IR NUMBER,
+  BR VARCHAR2(32 CHAR),
+  INT VARCHAR2(32 CHAR),
+  EN VARCHAR2(300 CHAR),
+  FR VARCHAR2(300 CHAR),
+  GE VARCHAR2(300 BYTE),
+  RO VARCHAR2(300 CHAR),
+  LINK VARCHAR2(300 CHAR)
+, CONSTRAINT SIMBS_PK PRIMARY KEY
+  (
+    ID
+  )
+  ENABLE
+)
+  TABLESPACE "SYSTEM"
+  LOGGING 
+  PCTFREE 10
+  PCTUSED 40
+  INITRANS 1
+  MAXTRANS 255
+  STORAGE
+  (
+    INITIAL 64K
+    NEXT 1M
+    MINEXTENTS 1
+    MAXEXTENTS 2147483645
+    FREELISTS 1
+    FREELIST GROUPS 1
+    BUFFER_POOL DEFAULT
+  )
+;
+
+
+  CREATE TABLE "SYSTEM"."SREL" 
+   (	"ID" NUMBER NOT NULL ENABLE, 
+	"IR" NUMBER, 
+	"VAR" NUMBER, 
+	"EN" VARCHAR2(60 CHAR), 
+	"FR" VARCHAR2(60 CHAR), 
+	"RO" VARCHAR2(60 CHAR), 
+	"GE" VARCHAR2(60 CHAR), 
+	"INFO" VARCHAR2(300 CHAR), 
+	"IR2" NUMBER, 
+	"VAR2" NUMBER
+   ) PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+ 
+
+  CREATE OR REPLACE TRIGGER "SYSTEM"."SREL_AUTOINCREMENT" 
+BEFORE INSERT ON SREL
+REFERENCING OLD AS OLD NEW AS NEW 
+FOR EACH ROW 
+ WHEN (NEW.ID IS NULL) BEGIN
+  select SREL_SEQ_ID.NEXTVAL
+  INTO :NEW.ID from dual;
+END;
+
+
+/
+ALTER TRIGGER "SYSTEM"."SREL_AUTOINCREMENT" ENABLE;
+ 
+ INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+1,1,100,'is exemplified by','-','este exemplificat prin','-','class is instantialised as',9999,1
+);
+INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+2,9999,1,'is a','-', 'este','-','is instance of class',1,100
+);
+INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+3,2,100,'include','-','include','-','set has as elemENt',9998,1
+);
+INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+4,9998,1,'is included in','-','este inclus in','-','is elemENt in set',2,100
+);
+INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+5,3,100,'have','-','are','-','are urmatoarele pROprietati',9997,1
+);
+INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+6,9997,1,'is pROperty of','-','apartine la','-','este pROprietate pENtru',3,100
+);
+INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+7,5,10,'increase','-','sporeste','-','influENce',9995,-10
+);
+INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+8,5,-10,'decrease','-','diminua','-','influENce',9995,10
+);
+INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+9,9995,-10,'is decreased by','-','este diminuat de catre','-','-',5,10
+);
+INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+10,9995,10,'is increased by','-','este sporit de catre','-','-',5,-10
+);
+INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+11,10,100,'=jjjjjjkjkjkkj','=','=','=','-',9990,1
+);
+INSERT INTO SREL
+(ID,
+IR,
+VAR,
+EN,
+FR,
+RO,
+GE,
+INFO,
+IR2,
+VAR2)
+VALUES
+(
+12,9990,1,'xopokliujilhi','x','x','x','-',10,100
+);

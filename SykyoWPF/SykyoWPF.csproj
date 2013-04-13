@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8858E1A7-DF45-42D2-9CF2-9FF437CE1290}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SykyoWPF</RootNamespace>
+    <AssemblyName>SykyoWPF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mysql.data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySqlConnector\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>Npgsl\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.84.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Controller\DocumentManager\EDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\DocumentManager\SymbolItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controller\LoggingSystem\LogController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectModel\CodeExplorer\CodeFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectModel\CodeExplorer\ElementClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectModel\CodeExplorer\ElementMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectModel\CodeExplorer\ElementNamespace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectModel\CodeExplorer\ElementParameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectModel\CodeExplorer\ElementProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectModel\CodeExplorer\Program.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sAccessDataBase\DataAccessFlags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sAccessDataBase\SyntaxInterface.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sAccessDataBase\SyntaxMySQL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sAccessDataBase\SyntaxOracle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sAccessDataBase\SyntaxPostgree.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sAccessDataBase\SyntaxSQLite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sAccessDataBase\SyntaxSqlServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sElement\AbstractCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sElement\sElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sElement\sElementCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sElement\sObjectCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sElement\SOperatorCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sElement\sRelation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sElement\sRelationCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserInterface\CollectionExplorer\DateConverter.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\PhraseEncoder\" />
+    <Folder Include="IMG\" />
+    <Folder Include="Npgsl\" />
+    <Folder Include="sAccessDataBase\Dependencies\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeProcessor\CodeProcessor.csproj">
+      <Project>{d638a561-b72d-4f91-afa1-df1eb1060248}</Project>
+      <Name>CodeProcessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataExplorer\DataExplorer.csproj">
+      <Project>{c9eaf9eb-91df-4333-9084-3a95358336b4}</Project>
+      <Name>DataExplorer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{04954bae-9059-49ca-875f-c9cdaf30f7ab}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DiagramCreator\DiagramCreator.csproj">
+      <Project>{9766d6ae-5643-439a-ba6f-55c00a6affad}</Project>
+      <Name>DiagramCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\framework\DataPersistency.csproj">
+      <Project>{a12cf608-c7e2-4869-9f4d-c06542959648}</Project>
+      <Name>DataPersistency</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NaturalLanguageProceessor\NaturalLanguageProcessor.csproj">
+      <Project>{7db3f380-4fda-4516-92a7-95c7a67d20a7}</Project>
+      <Name>NaturalLanguageProcessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SykyoWF\SykyoWF.csproj">
+      <Project>{db509be0-9231-4278-8bd9-5f146663d39d}</Project>
+      <Name>SykyoWF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SystemInterface\SystemInterface.csproj">
+      <Project>{d06c3d0f-9310-4f28-ae63-f528aa9c95fc}</Project>
+      <Name>SystemInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

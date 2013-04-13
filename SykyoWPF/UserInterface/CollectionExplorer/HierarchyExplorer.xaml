@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApplication1.UserInterface.CollectionExplorer.HierarchyExplorer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="HierarchyExplorer" Height="305" Width="1155">
+    <Window.Resources>
+        <!--my:DateConverter state="Green" x:Key="myTrafficLight" /-->
+    </Window.Resources>
+    <Grid>
+        <DataGrid AutoGenerateColumns="False" HorizontalAlignment="Stretch" Margin="68,41,56,29" Name="dataGrid1" VerticalAlignment="Stretch" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" SelectionChanged="dataGrid1_SelectionChanged">
+            <DataGrid.Columns>
+                <!--DataGridTextColumn Header="Header" Binding="{Binding WhateverIWantToDisplay}" >
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Background" Value="{Binding Foo, Converter={x:Static  WpfApplication1.UserInterface.CollectionExplorer.HierarchyExplorer.FooToColorConverter.Instance}}" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn-->
+
+                <DataGridTextColumn Header="Header" />
+                <DataGridTextColumn Header="Header" />
+                <DataGridTextColumn Header="Header" />
+                <DataGridTextColumn Header="Header" />
+                <DataGridTextColumn Header="Header" />
+                <DataGridTextColumn Header="Header" />
+                <DataGridTextColumn Header="Header" />
+                <DataGridTextColumn Header="Header" />
+                <DataGridTextColumn Header="Header" />
+                <DataGridTextColumn Header="Header" />
+            </DataGrid.Columns>
+            <!--DataGrid.CellStyle>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Setter Property="Background" Value="{Binding SomeProperty, Converter={StaticResource FooToColorConverter}}" />
+                </Style>
+            </DataGrid.CellStyle-->
+        </DataGrid>
+        <Button Content="Up" Height="23" HorizontalAlignment="Stretch" Margin="68,12,56,0" Name="MouveUpButton" VerticalAlignment="Top" Click="MouveUpButton_Click" />
+        <Button Content="Down" Height="23" HorizontalAlignment="Stretch" Margin="68,0,56,0" Name="MouveDownButton" VerticalAlignment="Bottom" Click="MouveDownButton_Click" />
+        <Button Content="Left" HorizontalAlignment="Left" Margin="12,12,0,0" Name="button1" VerticalAlignment="Stretch" Width="50" Click="button1_Click" />
+        <Button Content="Right" HorizontalAlignment="Right" Margin="386,12,0,0" Name="button2" VerticalAlignment="Stretch" Width="50" Click="button2_Click" />
+    </Grid>
+</Window>

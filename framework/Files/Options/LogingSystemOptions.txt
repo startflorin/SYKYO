@@ -1,0 +1,16 @@
+LogNumbersNone	System.Boolean	False
+LogNumbersResults	System.Boolean	True
+LogNumbersParameters	System.Boolean	False
+LogNumbersCode	System.Boolean	False
+LogObjectsNone	System.Boolean	False
+LogObjectsResults	System.Boolean	False
+LogObjectsParameters	System.Boolean	True
+LogObjectsCode	System.Boolean	False
+LogRelationsNone	System.Boolean	False
+LogRelationsResults	System.Boolean	False
+LogRelationsParameters	System.Boolean	False
+LogRelationsCode	System.Boolean	False
+LogLogicsNone	System.Boolean	False
+LogLogicsResults	System.Boolean	False
+LogLogicsParameters	System.Boolean	False
+LogLogicsCode	System.Boolean	False

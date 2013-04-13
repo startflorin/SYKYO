@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB509BE0-9231-4278-8BD9-5F146663D39D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SykyoWF</RootNamespace>
+    <AssemblyName>SykyoWF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="mysql.data, Version=6.4.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Users\PROFIMEDICA\Documents\Visual Studio 2010\Projects\2010_WpfApplication1\WpfApplication1\bin\Debug\MySqlConnector\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>C:\Program Files\PostgreSQL\Npgsql\ms.net4.0\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=4.112.3.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>D:\Users\PROFIMEDICA\Documents\Visual Studio 2010\Projects\2010_WpfApplication1\WpfApplication1\bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL\CodeAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BL\DatabaseOptionsConditionModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BL\FileAccess.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BL\ReadFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataAccess\FileAccess\TextFileAccess.cs" />
+    <Compile Include="Model\Options\LoggingSystemOptions.cs" />
+    <Compile Include="Documentation\CodingRules.cs" />
+    <Compile Include="DataAccess\Level_Logic_From_Relations\RelationItem.cs" />
+    <Compile Include="CD\CodePhrase.cs" />
+    <Compile Include="DL\DecodePhrase.cs" />
+    <Compile Include="DataAccess\Level_Logic_From_Relations\RelationCollection.cs" />
+    <Compile Include="DataAccess\Level_Objects_From_Numbers\SymbolCollection.cs" />
+    <Compile Include="DataAccess\Level_Objects_From_Numbers\SymbolItem.cs" />
+    <Compile Include="DataAccess\Level_Operator_From_Numbers\OperatorCollection.cs" />
+    <Compile Include="DataAccess\Level_Operator_From_Numbers\OperatorItem.cs" />
+    <Compile Include="Model\FileSystem\UserOptions.cs" />
+    <Compile Include="StructuredPriorityQue\StructuredPriority.cs">
+      <DependentUpon>StructuredPriority.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StructuredPriorityQue\StructuredPriority.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StructuredPriority.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomMessageBox.Designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Option\OptionsTrace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Option\OptionsTrace.Designer.cs">
+      <DependentUpon>OptionsTrace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Option\OptionsDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Option\OptionsDatabase.Designer.cs">
+      <DependentUpon>OptionsDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MSDNReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MSDNReader.Designer.cs">
+      <DependentUpon>MSDNReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Test\TestRelation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Test\TestRelation.Designer.cs">
+      <DependentUpon>TestRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Alpha.cs" />
+    <Compile Include="UI\Parameter.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SP-SQL\Procedure.cs" />
+    <Compile Include="SP-SQL\ProcedureCatalogue.cs" />
+    <Compile Include="UI\Test\TestServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Test\TestServer.Designer.cs">
+      <DependentUpon>TestServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Test\TestSymbol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Test\TestSymbol.Designer.cs">
+      <DependentUpon>TestSymbol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WatchParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WatchParameters.Designer.cs">
+      <DependentUpon>WatchParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MyCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MyCode.Designer.cs">
+      <DependentUpon>MyCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryEvaluator.cs" />
+    <Compile Include="UI\WebView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WebView.Designer.cs">
+      <DependentUpon>WebView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Option\OptionsTrace.resx">
+      <DependentUpon>OptionsTrace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Option\OptionsDatabase.resx">
+      <DependentUpon>OptionsDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MSDNReader.resx">
+      <DependentUpon>MSDNReader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Test\TestRelation.resx">
+      <DependentUpon>TestRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Test\TestServer.resx">
+      <DependentUpon>TestServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Test\TestSymbol.resx">
+      <DependentUpon>TestSymbol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WatchParameters.resx">
+      <DependentUpon>WatchParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MyCode.resx">
+      <DependentUpon>MyCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\WebView.resx">
+      <DependentUpon>WebView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\DataSources\WindowsFormsApplication1.BL.DatabaseOptionsConditionModel.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication1.DataAccess.Options.LoggingSystemOptions.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="StructuredPriorityQue\StructuredPriority.xsc">
+      <DependentUpon>StructuredPriority.xsd</DependentUpon>
+    </None>
+    <None Include="StructuredPriorityQue\StructuredPriority.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StructuredPriority.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="StructuredPriorityQue\StructuredPriority.xss">
+      <DependentUpon>StructuredPriority.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Documentation\Initialize SQL Server.txt" />
+    <Content Include="Documentation\Initialize MySQL Server.txt" />
+    <Content Include="Documentation\Initialize Oracle Server.txt" />
+    <Content Include="IMG\call.gif" />
+    <Content Include="IMG\Class.gif" />
+    <Content Include="IMG\Constructor.gif" />
+    <Content Include="IMG\Conversion.gif" />
+    <Content Include="IMG\Delegate.gif" />
+    <Content Include="IMG\Enumeration.gif" />
+    <Content Include="IMG\Event.gif" />
+    <Content Include="IMG\Field.gif" />
+    <Content Include="IMG\Field_default.gif" />
+    <Content Include="IMG\Interface.gif" />
+    <Content Include="IMG\Member.gif" />
+    <Content Include="IMG\Method.gif" />
+    <Content Include="IMG\Namespace.gif" />
+    <Content Include="IMG\Operator.gif" />
+    <Content Include="IMG\Operator_default.gif" />
+    <Content Include="IMG\Property.gif" />
+    <Content Include="IMG\Structure.gif" />
+    <Content Include="IMG\sub.gif" />
+    <Content Include="IMG\variable - Copy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeProcessor\CodeProcessor.csproj">
+      <Project>{d638a561-b72d-4f91-afa1-df1eb1060248}</Project>
+      <Name>CodeProcessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataExplorer\DataExplorer.csproj">
+      <Project>{c9eaf9eb-91df-4333-9084-3a95358336b4}</Project>
+      <Name>DataExplorer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{04954bae-9059-49ca-875f-c9cdaf30f7ab}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DiagramCreator\DiagramCreator.csproj">
+      <Project>{9766d6ae-5643-439a-ba6f-55c00a6affad}</Project>
+      <Name>DiagramCreator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\framework\DataPersistency.csproj">
+      <Project>{a12cf608-c7e2-4869-9f4d-c06542959648}</Project>
+      <Name>DataPersistency</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\NaturalLanguageProceessor\NaturalLanguageProcessor.csproj">
+      <Project>{7db3f380-4fda-4516-92a7-95c7a67d20a7}</Project>
+      <Name>NaturalLanguageProcessor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

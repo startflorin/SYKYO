@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StructuredPriority" targetNamespace="http://tempuri.org/StructuredPriority.xsd" xmlns:mstns="http://tempuri.org/StructuredPriority.xsd" xmlns="http://tempuri.org/StructuredPriority.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StructuredPriority" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StructuredPriority" msprop:Generator_UserDSName="StructuredPriority">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LEV01_SENTENCE" msprop:Generator_TableClassName="LEV01_SENTENCEDataTable" msprop:Generator_TableVarName="tableLEV01_SENTENCE" msprop:Generator_TablePropName="LEV01_SENTENCE" msprop:Generator_RowDeletingName="LEV01_SENTENCERowDeleting" msprop:Generator_UserTableName="LEV01_SENTENCE" msprop:Generator_RowChangingName="LEV01_SENTENCERowChanging" msprop:Generator_RowEvHandlerName="LEV01_SENTENCERowChangeEventHandler" msprop:Generator_RowDeletedName="LEV01_SENTENCERowDeleted" msprop:Generator_RowEvArgName="LEV01_SENTENCERowChangeEvent" msprop:Generator_RowChangedName="LEV01_SENTENCERowChanged" msprop:Generator_RowClassName="LEV01_SENTENCERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LEV01_BLOCK_ID" msprop:Generator_ColumnVarNameInTable="columnLEV01_BLOCK_ID" msprop:Generator_ColumnPropNameInRow="LEV01_BLOCK_ID" msprop:Generator_ColumnPropNameInTable="LEV01_BLOCK_IDColumn" msprop:Generator_UserColumnName="LEV01_BLOCK_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="LEV01_SENTENCE_ID" msprop:Generator_ColumnVarNameInTable="columnLEV01_SENTENCE_ID" msprop:Generator_ColumnPropNameInRow="LEV01_SENTENCE_ID" msprop:Generator_ColumnPropNameInTable="LEV01_SENTENCE_IDColumn" msprop:Generator_UserColumnName="LEV01_SENTENCE_ID" type="xs:string" />
+              <xs:element name="LEV01_LOOP_ID" msprop:Generator_ColumnVarNameInTable="columnLEV01_LOOP_ID" msprop:Generator_ColumnPropNameInRow="LEV01_LOOP_ID" msprop:Generator_ColumnPropNameInTable="LEV01_LOOP_IDColumn" msprop:Generator_UserColumnName="LEV01_LOOP_ID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LEV02_LOOP" msprop:Generator_TableClassName="LEV02_LOOPDataTable" msprop:Generator_TableVarName="tableLEV02_LOOP" msprop:Generator_TablePropName="LEV02_LOOP" msprop:Generator_RowDeletingName="LEV02_LOOPRowDeleting" msprop:Generator_UserTableName="LEV02_LOOP" msprop:Generator_RowChangingName="LEV02_LOOPRowChanging" msprop:Generator_RowEvHandlerName="LEV02_LOOPRowChangeEventHandler" msprop:Generator_RowDeletedName="LEV02_LOOPRowDeleted" msprop:Generator_RowEvArgName="LEV02_LOOPRowChangeEvent" msprop:Generator_RowChangedName="LEV02_LOOPRowChanged" msprop:Generator_RowClassName="LEV02_LOOPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LEV02_LOOP_ID" msprop:Generator_ColumnVarNameInTable="columnLEV02_LOOP_ID" msprop:Generator_ColumnPropNameInRow="LEV02_LOOP_ID" msprop:Generator_ColumnPropNameInTable="LEV02_LOOP_IDColumn" msprop:Generator_UserColumnName="LEV02_LOOP_ID" type="xs:string" />
+              <xs:element name="LEV02_BLOCK_ID" msprop:Generator_ColumnVarNameInTable="columnLEV02_BLOCK_ID" msprop:Generator_ColumnPropNameInRow="LEV02_BLOCK_ID" msprop:Generator_ColumnPropNameInTable="LEV02_BLOCK_IDColumn" msprop:Generator_UserColumnName="LEV02_BLOCK_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="LEV02_LOOP_TYPE" msprop:Generator_ColumnVarNameInTable="columnLEV02_LOOP_TYPE" msprop:Generator_ColumnPropNameInRow="LEV02_LOOP_TYPE" msprop:Generator_ColumnPropNameInTable="LEV02_LOOP_TYPEColumn" msprop:Generator_UserColumnName="LEV02_LOOP_TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LEV03_EXPRESION" msprop:Generator_TableClassName="LEV03_EXPRESIONDataTable" msprop:Generator_TableVarName="tableLEV03_EXPRESION" msprop:Generator_TablePropName="LEV03_EXPRESION" msprop:Generator_RowDeletingName="LEV03_EXPRESIONRowDeleting" msprop:Generator_UserTableName="LEV03_EXPRESION" msprop:Generator_RowChangingName="LEV03_EXPRESIONRowChanging" msprop:Generator_RowEvHandlerName="LEV03_EXPRESIONRowChangeEventHandler" msprop:Generator_RowDeletedName="LEV03_EXPRESIONRowDeleted" msprop:Generator_RowEvArgName="LEV03_EXPRESIONRowChangeEvent" msprop:Generator_RowChangedName="LEV03_EXPRESIONRowChanged" msprop:Generator_RowClassName="LEV03_EXPRESIONRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LEV03_EXPRESSION_ID" msprop:Generator_ColumnVarNameInTable="columnLEV03_EXPRESSION_ID" msprop:Generator_ColumnPropNameInRow="LEV03_EXPRESSION_ID" msprop:Generator_ColumnPropNameInTable="LEV03_EXPRESSION_IDColumn" msprop:Generator_UserColumnName="LEV03_EXPRESSION_ID" type="xs:string" />
+              <xs:element name="LEV03_RELATION_ID" msprop:Generator_ColumnVarNameInTable="columnLEV03_RELATION_ID" msprop:Generator_ColumnPropNameInRow="LEV03_RELATION_ID" msprop:Generator_ColumnPropNameInTable="LEV03_RELATION_IDColumn" msprop:Generator_UserColumnName="LEV03_RELATION_ID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LEV04_RELATION" msprop:Generator_TableClassName="LEV04_RELATIONDataTable" msprop:Generator_TableVarName="tableLEV04_RELATION" msprop:Generator_TablePropName="LEV04_RELATION" msprop:Generator_RowDeletingName="LEV04_RELATIONRowDeleting" msprop:Generator_UserTableName="LEV04_RELATION" msprop:Generator_RowChangingName="LEV04_RELATIONRowChanging" msprop:Generator_RowEvHandlerName="LEV04_RELATIONRowChangeEventHandler" msprop:Generator_RowDeletedName="LEV04_RELATIONRowDeleted" msprop:Generator_RowEvArgName="LEV04_RELATIONRowChangeEvent" msprop:Generator_RowChangedName="LEV04_RELATIONRowChanged" msprop:Generator_RowClassName="LEV04_RELATIONRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LEV04_RELATION_ID" msprop:Generator_ColumnVarNameInTable="columnLEV04_RELATION_ID" msprop:Generator_ColumnPropNameInRow="LEV04_RELATION_ID" msprop:Generator_ColumnPropNameInTable="LEV04_RELATION_IDColumn" msprop:Generator_UserColumnName="LEV04_RELATION_ID" type="xs:string" />
+              <xs:element name="LEV04_MULTIPLICITY" msprop:Generator_ColumnVarNameInTable="columnLEV04_MULTIPLICITY" msprop:Generator_ColumnPropNameInRow="LEV04_MULTIPLICITY" msprop:Generator_ColumnPropNameInTable="LEV04_MULTIPLICITYColumn" msprop:Generator_UserColumnName="LEV04_MULTIPLICITY" type="xs:string" minOccurs="0" />
+              <xs:element name="LEV04_REFERENCE" msprop:Generator_ColumnVarNameInTable="columnLEV04_REFERENCE" msprop:Generator_ColumnPropNameInRow="LEV04_REFERENCE" msprop:Generator_ColumnPropNameInTable="LEV04_REFERENCEColumn" msprop:Generator_UserColumnName="LEV04_REFERENCE" type="xs:string" minOccurs="0" />
+              <xs:element name="LEV04_OPERATOR" msprop:Generator_ColumnVarNameInTable="columnLEV04_OPERATOR" msprop:Generator_ColumnPropNameInRow="LEV04_OPERATOR" msprop:Generator_ColumnPropNameInTable="LEV04_OPERATORColumn" msprop:Generator_UserColumnName="LEV04_OPERATOR" type="xs:string" minOccurs="0" />
+              <xs:element name="LEV04_INTEGRITY" msprop:Generator_ColumnVarNameInTable="columnLEV04_INTEGRITY" msprop:Generator_ColumnPropNameInRow="LEV04_INTEGRITY" msprop:Generator_ColumnPropNameInTable="LEV04_INTEGRITYColumn" msprop:Generator_UserColumnName="LEV04_INTEGRITY" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LEV03_BLOCK" msprop:Generator_TableClassName="LEV03_BLOCKDataTable" msprop:Generator_TableVarName="tableLEV03_BLOCK" msprop:Generator_TablePropName="LEV03_BLOCK" msprop:Generator_RowDeletingName="LEV03_BLOCKRowDeleting" msprop:Generator_UserTableName="LEV03_BLOCK" msprop:Generator_RowChangingName="LEV03_BLOCKRowChanging" msprop:Generator_RowEvHandlerName="LEV03_BLOCKRowChangeEventHandler" msprop:Generator_RowDeletedName="LEV03_BLOCKRowDeleted" msprop:Generator_RowEvArgName="LEV03_BLOCKRowChangeEvent" msprop:Generator_RowChangedName="LEV03_BLOCKRowChanged" msprop:Generator_RowClassName="LEV03_BLOCKRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LEV03_BLOCK_ID" msprop:Generator_ColumnVarNameInTable="columnLEV03_BLOCK_ID" msprop:Generator_ColumnPropNameInRow="LEV03_BLOCK_ID" msprop:Generator_ColumnPropNameInTable="LEV03_BLOCK_IDColumn" msprop:Generator_UserColumnName="LEV03_BLOCK_ID" type="xs:string" />
+              <xs:element name="LEV03_EXPRESSION_ID" msprop:Generator_ColumnVarNameInTable="columnLEV03_EXPRESSION_ID" msprop:Generator_ColumnPropNameInRow="LEV03_EXPRESSION_ID" msprop:Generator_ColumnPropNameInTable="LEV03_EXPRESSION_IDColumn" msprop:Generator_UserColumnName="LEV03_EXPRESSION_ID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="LEV01_SENTENCEKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LEV01_SENTENCE" />
+      <xs:field xpath="mstns:LEV01_SENTENCE_ID" />
+    </xs:unique>
+    <xs:unique name="LEV02_LOOPKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LEV02_LOOP" />
+      <xs:field xpath="mstns:LEV02_LOOP_ID" />
+    </xs:unique>
+    <xs:unique name="LEV03_EXPRESIONKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LEV03_EXPRESION" />
+      <xs:field xpath="mstns:LEV03_EXPRESSION_ID" />
+    </xs:unique>
+    <xs:unique name="LEV04_RELATIONKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LEV04_RELATION" />
+      <xs:field xpath="mstns:LEV04_RELATION_ID" />
+    </xs:unique>
+    <xs:unique name="LEV03_BLOCKKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LEV03_BLOCK" />
+      <xs:field xpath="mstns:LEV03_BLOCK_ID" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="LEV03_EXPRESION_LEV04_RELATION" msdata:parent="LEV03_EXPRESION" msdata:child="LEV04_RELATION" msdata:parentkey="LEV03_RELATION_ID" msdata:childkey="LEV04_RELATION_ID" msprop:Generator_UserChildTable="LEV04_RELATION" msprop:Generator_ChildPropName="GetLEV04_RELATIONRows" msprop:Generator_ParentPropName="LEV03_EXPRESIONRow" msprop:Generator_UserRelationName="LEV03_EXPRESION_LEV04_RELATION" msprop:Generator_RelationVarName="relationLEV03_EXPRESION_LEV04_RELATION" msprop:Generator_UserParentTable="LEV03_EXPRESION" />
+      <msdata:Relationship name="LEV01_SENTENCE_LEV02_LOOP" msdata:parent="LEV01_SENTENCE" msdata:child="LEV02_LOOP" msdata:parentkey="LEV01_LOOP_ID" msdata:childkey="LEV02_LOOP_ID" msprop:Generator_UserChildTable="LEV02_LOOP" msprop:Generator_ChildPropName="GetLEV02_LOOPRows" msprop:Generator_ParentPropName="LEV01_SENTENCERow" msprop:Generator_UserRelationName="LEV01_SENTENCE_LEV02_LOOP" msprop:Generator_RelationVarName="relationLEV01_SENTENCE_LEV02_LOOP" msprop:Generator_UserParentTable="LEV01_SENTENCE" />
+      <msdata:Relationship name="LEV03_EXPRESION_LEV03_BLOCK" msdata:parent="LEV03_BLOCK" msdata:child="LEV03_EXPRESION" msdata:parentkey="LEV03_EXPRESSION_ID" msdata:childkey="LEV03_EXPRESSION_ID" msprop:Generator_UserChildTable="LEV03_EXPRESION" msprop:Generator_ChildPropName="GetLEV03_EXPRESIONRows" msprop:Generator_ParentPropName="LEV03_BLOCKRow" msprop:Generator_UserRelationName="LEV03_EXPRESION_LEV03_BLOCK" msprop:Generator_RelationVarName="relationLEV03_EXPRESION_LEV03_BLOCK" msprop:Generator_UserParentTable="LEV03_BLOCK" />
+      <msdata:Relationship name="LEV02_LOOP_LEV03_BLOCK" msdata:parent="LEV02_LOOP" msdata:child="LEV03_BLOCK" msdata:parentkey="LEV02_BLOCK_ID" msdata:childkey="LEV03_BLOCK_ID" msprop:Generator_UserChildTable="LEV03_BLOCK" msprop:Generator_ChildPropName="GetLEV03_BLOCKRows" msprop:Generator_ParentPropName="LEV02_LOOPRow" msprop:Generator_UserRelationName="LEV02_LOOP_LEV03_BLOCK" msprop:Generator_RelationVarName="relationLEV02_LOOP_LEV03_BLOCK" msprop:Generator_UserParentTable="LEV02_LOOP" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

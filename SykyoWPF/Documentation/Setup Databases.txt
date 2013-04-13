@@ -1,0 +1,26 @@
+﻿Sqlite Setup:
+1) Install 
+Source: http://system.data.sqlite.org/downloads/1.0.81.0/sqlite-netFx35-setup-bundle-x86-2008-1.0.81.0.exe
+Destination: C:\Program Files\System.Data.SQLite\2008
+2) Add dependency: .NET System.data.SQLite Core
+
+MySQL Setup:
+1) Install Mysql Connector 6.4.5
+Source: http://dev.mysql.com/downloads/connector/net/1.0.html
+Destination: default, complete
+2) Add dependency: MySQL.Data 6.4.5
+
+Postgree Setup
+1) Install using start_florin start1312
+Source: http://www.enterprisedb.com/downloads/postgres-postgresql-downloads
+NOTE: hard to find or saved in programs :)
+2) Create Directory for Npgsl and add it to dependencies
+The directory contains : Npgsl.xml, Npgsl.DebugDatabase, Npgsql.dll, Mono.Security.dll
+
+Oracle Setup
+1) Install Oracle using acount start_florin@yahoo.com start1312
+2) Install ODT 
+Source: http://www.oracle.com/technetwork/database/windows/downloads/index-101290.html
+Destination: 
+2) Add dependency: Oracle.DataAccess
+3) SQL Developer: orcl, default TNS, SYSTEM:Start1312, ORCL

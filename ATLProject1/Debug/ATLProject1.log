@@ -1,0 +1,8 @@
+﻿Der Buildvorgang wurde am 11.04.2013 21:56:06 gestartet.
+     1>Projekt "C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\ATLProject1\ATLProject1.vcxproj" auf Knoten "2", build Ziel(e).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\Microsoft.Cpp.Win32.Targets(518,5): error MSB8008: Das angegebene Plattformtoolset (v110) ist nicht installiert oder ungültig. Stellen Sie sicher, dass ein unterstützter PlatformToolset-Wert ausgewählt wurde.
+     1>Die Erstellung des Projekts "C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\ATLProject1\ATLProject1.vcxproj" ist abgeschlossen, build Ziel(e) -- FEHLER.
+
+Fehler beim Erstellen
+
+Verstrichene Zeit 00:00:00.57

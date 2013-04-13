@@ -1,0 +1,17 @@
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\bin\Debug\framework.exe.config
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\bin\Debug\framework.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\bin\Debug\framework.pdb
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\obj\Debug\framework.Properties.Resources.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\obj\Debug\framework.csproj.GenerateResource.Cache
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\obj\Debug\framework.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\obj\Debug\framework.pdb
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\obj\Debug\framework.Form1.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\obj\Debug\framework.csprojResolveAssemblyReference.cache
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\obj\Debug\Framework.UI.UserOptions.DatabaseOptions.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\obj\Debug\Framework.UI.UserOptions.TraceOptions.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\bin\Debug\mysql.data.dll
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\bin\Debug\Npgsql.dll
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\bin\Debug\Oracle.DataAccess.dll
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\bin\Debug\System.Data.SQLite.dll
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\obj\Debug\Framework.UI.Logging.SQLView.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\framework\obj\Debug\Framework.UI.UserOptions.ConnectionStringEditor.resources

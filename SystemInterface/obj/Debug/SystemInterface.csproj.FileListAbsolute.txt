@@ -1,0 +1,17 @@
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\SystemInterface\bin\Debug\SystemInterface.exe.config
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\SystemInterface\bin\Debug\SystemInterface.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\SystemInterface\bin\Debug\SystemInterface.pdb
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\SystemInterface\obj\Debug\SystemInterface.csprojResolveAssemblyReference.cache
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\SystemInterface\obj\Debug\SystemInterface.Properties.Resources.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\SystemInterface\obj\Debug\SystemInterface.csproj.GenerateResource.Cache
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\SystemInterface\obj\Debug\SystemInterface.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\SystemInterface\obj\Debug\SystemInterface.pdb
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\SystemInterface\bin\Debug\SystemInterface.exe.config
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\SystemInterface\bin\Debug\SystemInterface.exe
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\SystemInterface\bin\Debug\SystemInterface.pdb
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\SystemInterface\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\SystemInterface\obj\Debug\SystemInterface.Properties.Resources.resources
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\SystemInterface\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\SystemInterface\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\SystemInterface\obj\Debug\SystemInterface.exe
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\SystemInterface\obj\Debug\SystemInterface.pdb

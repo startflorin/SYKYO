@@ -1,0 +1,229 @@
+﻿USE [master]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [rpro0001_cabinet].[dbo].[SIMBS](
+	[ID] [int] NULL,
+	[IR] [int] NOT NULL,
+	[BR] [nchar](32) NOT NULL,
+	[INT] [nchar](32) NOT NULL,
+	[EN] [nchar](300) NOT NULL,
+	[FR] [nchar](300) NOT NULL,
+	[GE] [nchar](300) NOT NULL,
+	[RO] [nchar](300) NOT NULL,
+	[LINK] [nchar](300) NOT NULL
+) ON [PRIMARY]
+
+GO
+        
+USE [master]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[SREL](
+	[ID] [int] NULL,
+	[IR] [int] NOT NULL,
+	[VAR] [int] NOT NULL,
+	[EN] [nchar](60) NOT NULL,
+	[FR] [nchar](60) NOT NULL,
+	[RO] [nchar](60) NOT NULL,
+	[GE] [nchar](60) NOT NULL,
+	[INFO] [nchar](300) NOT NULL,
+	[IR2] [int] NOT NULL,
+	[VAR2] [int] NOT NULL
+) ON [PRIMARY]
+
+GO
+
+
+
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+1,1,100,'is exemplified by','-','este exemplificat prin','-','class is instantialised as',9999,1
+);
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+2,9999,1,'is a','-', 'este','-','is instance of class',1,100
+);
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+3,2,100,'include','-','include','-','set has as element',9998,1
+);
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+4,9998,1,'is included in','-','este inclus in','-','is element in set',2,100
+);
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+5,3,100,'have','-','are','-','are urmatoarele proprietati',9997,1
+);
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+6,9997,1,'is property of','-','apartine la','-','este proprietate pentru',3,100
+);
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+7,5,10,'increase','-','sporeste','-','influence',9995,-10
+);
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+8,5,-10,'decrease','-','diminua','-','influence',9995,10
+);
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+9,9995,-10,'is decreased by','-','este diminuat de catre','-','-',5,10
+);
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+10,9995,10,'is increased by','-','este sporit de catre','-','-',5,-10
+);
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+11,10,100,'=jjjjjjkjkjkkj','=','=','=','-',9990,1
+);
+INSERT INTO [rpro0001_cabinet].[dbo].[SREL]
+([rpro0001_cabinet].[dbo].[SREL].[ID],
+[rpro0001_cabinet].[dbo].[SREL].[IR],
+[rpro0001_cabinet].[dbo].[SREL].[VAR],
+[rpro0001_cabinet].[dbo].[SREL].[EN],
+[rpro0001_cabinet].[dbo].[SREL].[FR],
+[rpro0001_cabinet].[dbo].[SREL].[RO],
+[rpro0001_cabinet].[dbo].[SREL].[GE],
+[rpro0001_cabinet].[dbo].[SREL].[INFO],
+[rpro0001_cabinet].[dbo].[SREL].[IR2],
+[rpro0001_cabinet].[dbo].[SREL].[VAR2])
+VALUES
+(
+12,9990,1,'xopokliujilhi','x','x','x','-',10,100
+);
