@@ -1,0 +1,10 @@
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\NaturalLanguageProceessor.exe.config
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\NaturalLanguageProceessor.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\bin\Debug\NaturalLanguageProceessor.pdb
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProceessor.csprojResolveAssemblyReference.cache
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProceessor.Properties.Resources.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProceessor.Test.NaturalFromInternal.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProceessor.csproj.GenerateResource.Cache
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProceessor.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProceessor.pdb
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\NaturalLanguageProceessor\obj\Debug\NaturalLanguageProceessor.Form1.resources

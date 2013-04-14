@@ -1,0 +1,40 @@
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\bin\Debug\GeneratedWindowsFormsApplication.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\bin\Debug\GeneratedWindowsFormsApplication.pdb
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\bin\Debug\ZedGraph.dll
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.csprojResolveAssemblyReference.cache
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.DataWraper.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.Form1.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.Properties.Resources.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.SimulationBand.resources
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.csproj.GenerateResource.Cache
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWindowsFormsApplication.exe
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWindowsFormsApplication.pdb
+C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.Console.resources
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.Console.resources
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.DataWraper.resources
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.Form1.resources
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.Properties.Resources.resources
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWF.SimulationBand.resources
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWindowsFormsApplication.exe
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\obj\x86\Debug\GeneratedWindowsFormsApplication.pdb
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\bin\Debug\GeneratedWindowsFormsApplication.exe
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\bin\Debug\GeneratedWindowsFormsApplication.pdb
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\bin\Debug\Oracle.DataAccess.dll
+C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\GeneratedWF\bin\Debug\ZedGraph.dll
+C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWindowsFormsApplication.exe
+C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWindowsFormsApplication.pdb
+C:\15  School\SYKYO\GeneratedWF\bin\Debug\GeneratedWindowsFormsApplication.exe
+C:\15  School\SYKYO\GeneratedWF\bin\Debug\GeneratedWindowsFormsApplication.pdb
+C:\15  School\SYKYO\GeneratedWF\bin\Debug\Oracle.DataAccess.dll
+C:\15  School\SYKYO\GeneratedWF\bin\Debug\ZedGraph.dll
+C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.Console.resources
+C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.DataWraper.resources
+C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.Form1.resources
+C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.Properties.Resources.resources
+C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.SimulationBand.resources
+C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GenerateResource.write.1.tlog
