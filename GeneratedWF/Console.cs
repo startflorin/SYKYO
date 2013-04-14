@@ -1,35 +1,46 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace GeneratedWF
 {
     public partial class Console : Form
     {
-        private static MyUdpClient udpClient = null;
+        /// <summary>
+        /// Client Unique Instance
+        /// </summary>
+        private static MyUdpClient udpClient;
 
+        /// <summary>
+        /// Last message recived from self
+        /// </summary>
         public static string Message;
 
+        /// <summary>
+        /// Console window constructor
+        /// </summary>
         public Console()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Set this application as server side application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonServer_Click(object sender, EventArgs e)
         {
-            UdpServer udpServer = new UdpServer();
+            var udpServer = new UdpServer();
             udpServer.Changed += udpServer_Changed;
             udpServer.Start();
 
-            UpdateUI(State.IsServer);
+            UpdateUserInterface(State.IsServer);
         }
 
+        /// <summary>
+        /// Possible form states
+        /// </summary>
         private enum State
         {
             IsServer, IsClient
@@ -38,17 +49,17 @@ namespace GeneratedWF
         /// <summary>
         /// Update UI for the current event
         /// </summary>
-        private void UpdateUI(State newState)
+        private void UpdateUserInterface(State newState)
         {
             // Change UI
             buttonClient.Hide();
             buttonServer.Hide();
 
             richTextBox1.BackColor = newState == State.IsClient ? Color.DeepSkyBlue : Color.DarkOrange;
-            this.Text = newState == State.IsClient ? "Client Console" : "Server Console";
+            Text = newState == State.IsClient ? "Client Console" : "Server Console";
             if (newState == State.IsClient)
             {
-                this.Close();
+                Close();
             }
         }
 
@@ -56,7 +67,7 @@ namespace GeneratedWF
         {
             udpClient = new MyUdpClient(MyUdpClient.clientType.UDP);
             udpClient.Changed += udpClient_Changed;
-            UpdateUI(State.IsClient);
+            UpdateUserInterface(State.IsClient);
         }
 
         // send an xml through TCP
@@ -73,11 +84,6 @@ namespace GeneratedWF
             }
         }
 
-        void udpServer_ChangedDelegate()
-        {
-            
-        }
-
 
         void udpServer_Changed(object sender, EventArgs e)
         {
@@ -86,28 +92,22 @@ namespace GeneratedWF
                 richTextBox1.Invoke(new MethodInvoker(delegate { richTextBox1.Text = Message; }));
             }
 
-            FormCollection FC = Application.OpenForms;
-            foreach (Form appform in FC)
+            FormCollection applicationOpenForms = Application.OpenForms;
+            foreach (Form appform in applicationOpenForms)
             {
-                if (appform is Form1)
+                var form1 = appform as Form1;
+                if (form1 != null)
                 {
-                    Form1 form = (Form1) appform;
+                    var form = form1;
                     if (form.dataTable.TableName == "Cat")
                     {
                         if (form.InvokeRequired) // Line #1
                         {
-                            form.Invoke(new MethodInvoker(delegate { form.ReloadData(); }));
+                            form.Invoke(new MethodInvoker(form.ReloadData));
                         }
-                        
-                        /*
-                        for (int i = 0; i < form.dataTable.Rows.Count; i++ )
-                        {
-                            form.dataTable.Rows[i][1]="Test";
-                        }
-                        */
                     }
                 }
-            } 
+            }
         }
     }
 }

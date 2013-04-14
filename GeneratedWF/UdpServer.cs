@@ -20,9 +20,10 @@ namespace GeneratedWF
     
     public class UdpServer
     {
-        private const int sampleTcpPort = 4567;
-        private const int sampleUdpPort = 4568;
-        public Thread sampleTcpThread, sampleUdpThread;
+        private const int SampleTcpPort = 4567;
+        private const int SampleUdpPort = 4568;
+        private Thread sampleTcpThread;
+        private Thread sampleUdpThread;
 
         protected virtual void OnChanged(EventArgs e)
         {
@@ -43,7 +44,7 @@ namespace GeneratedWF
             }
             catch (Exception e)
             {
-                Console.Message = ("An TCP Exception has occurred!" + e.ToString()); OnChanged(EventArgs.Empty);
+                Console.Message = ("An TCP Exception has occurred!" + e); OnChanged(EventArgs.Empty);
                 sampleTcpThread.Abort();
             }
             try
@@ -55,15 +56,15 @@ namespace GeneratedWF
             }
             catch (Exception e)
             {
-                Console.Message = ("An UDP Exception has occurred!" + e.ToString()); OnChanged(EventArgs.Empty);
+                Console.Message = ("An UDP Exception has occurred!" + e); OnChanged(EventArgs.Empty);
                 sampleUdpThread.Abort();
             }
         }
 
-        public void StartListen2()
+        private void StartListen2()
         {
             //Create an instance of TcpListener to listen for TCP connection.
-            TcpListener tcpListener = new TcpListener(sampleTcpPort);
+            var tcpListener = new TcpListener(SampleTcpPort);
             try
             {
                 while (true)
@@ -73,8 +74,8 @@ namespace GeneratedWF
                     Socket soTcp = tcpListener.AcceptSocket();
                     Console.Message = ("SampleClient is connected through TCP.");
                     OnChanged(EventArgs.Empty);
-                    Byte[] received = new Byte[512];
-                    int bytesReceived = soTcp.Receive(received, received.Length, 0);
+                    var received = new Byte[512];
+                    soTcp.Receive(received, received.Length, 0);
                     String dataReceived = System.Text.Encoding.ASCII.GetString(received);
                     Console.Message=(dataReceived);
                     String returningString = "The Server got your message through TCP: " +
@@ -83,25 +84,21 @@ namespace GeneratedWF
                         (returningString.ToCharArray());
                     //Returning a confirmation string back to the client.
                     soTcp.Send(returningByte, returningByte.Length, 0);
-                    if (false)
-                    {
-                        tcpListener.Stop();
-                    }
                 }
             }
             catch (SocketException se)
             {
-                Console.Message = ("A Socket Exception has occurred!" + se.ToString()); OnChanged(EventArgs.Empty);
+                Console.Message = ("A Socket Exception has occurred!" + se); OnChanged(EventArgs.Empty);
             }
         }
 
-        public void StartReceiveFrom2()
+        private void StartReceiveFrom2()
         {
-            IPHostEntry localHostEntry;
             try
             {
                 //Create a UDP socket.
-                Socket soUdp = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+                var soUdp = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+                IPHostEntry localHostEntry;
                 try
                 {
                     localHostEntry = Dns.GetHostByName(Dns.GetHostName());
@@ -111,25 +108,25 @@ namespace GeneratedWF
                     Console.Message = ("Local Host not found"); OnChanged(EventArgs.Empty);// fail
                     return;
                 }
-                IPEndPoint localIpEndPoint = new IPEndPoint(localHostEntry.AddressList[0], sampleUdpPort);
+                var localIpEndPoint = new IPEndPoint(localHostEntry.AddressList[0], SampleUdpPort);
                 soUdp.Bind(localIpEndPoint);
                 while (true)
                 {
-                    Byte[] received = new Byte[256];
-                    IPEndPoint tmpIpEndPoint = new IPEndPoint(localHostEntry.AddressList[0], sampleUdpPort);
-                    EndPoint remoteEP = (tmpIpEndPoint);
-                    int bytesReceived = soUdp.ReceiveFrom(received, ref remoteEP);
+                    var received = new Byte[256];
+                    var tmpIpEndPoint = new IPEndPoint(localHostEntry.AddressList[0], SampleUdpPort);
+                    EndPoint remoteEp = (tmpIpEndPoint);
+                    soUdp.ReceiveFrom(received, ref remoteEp);
                     String dataReceived = System.Text.Encoding.ASCII.GetString(received);
                     Console.Message = ("SampleClient is connected through UDP."); OnChanged(EventArgs.Empty);
                     Console.Message=(dataReceived);
                     String returningString = "The Server got your message through UDP:" + dataReceived; OnChanged(EventArgs.Empty);
                     Byte[] returningByte = System.Text.Encoding.ASCII.GetBytes(returningString.ToCharArray());
-                    soUdp.SendTo(returningByte, remoteEP);
+                    soUdp.SendTo(returningByte, remoteEp);
                 }
             }
             catch (SocketException se)
             {
-                Console.Message = ("A Socket Exception has occurred!" + se.ToString()); OnChanged(EventArgs.Empty);
+                Console.Message = ("A Socket Exception has occurred!" + se); OnChanged(EventArgs.Empty);
             }
         }
     }

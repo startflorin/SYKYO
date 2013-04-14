@@ -470,7 +470,7 @@ namespace GeneratedWF
         private void ReportChanges()
         {
             XmlProcessor xmlProcessor = new XmlProcessor();
-            string xml = xmlProcessor.XMLSyncronixe(dataTableAdaptor);
+            string xml = xmlProcessor.XmlSyncronixe(dataTableAdaptor);
             Console.SendXml(xml);
         }
 

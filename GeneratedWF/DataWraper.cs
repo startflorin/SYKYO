@@ -1,42 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace GeneratedWF
 {
     public partial class DataWraper : UserControl
     {
-        private Type type;
-        public DataTable dataTable;
-        public ITableAdaptor dataTableAdaptor;
-        BindingSource bindingSourceMain = null;
+        private readonly Type type;
+        private readonly DataTable dataTable;
+        private readonly ITableAdaptor dataTableAdaptor;
+        readonly BindingSource bindingSourceMain;
         
         public DataWraper(Type tableName, BindingSource componentId, ErrorProvider errorProvider)
         {
             errorProvider1 = errorProvider;
             
             bindingSourceMain = componentId;
-            bindingSourceMain.PositionChanged += new EventHandler(bindingSourceMain_PositionChanged);
+            bindingSourceMain.PositionChanged += bindingSourceMain_PositionChanged;
             InitializeComponent();
-            WrapperBindingSource.PositionChanged += new EventHandler(WrapperBindingSource_PositionChanged);
-            this.WrapperBindingSource.DataSource = tableName.GetType();
-            System.Type yy = tableName.GetType();
-            this.Text = tableName.Name + "s";
+            WrapperBindingSource.PositionChanged += WrapperBindingSource_PositionChanged;
+            WrapperBindingSource.DataSource = tableName.GetType();
+            //Type yy = tableName.GetType();
+            Text = tableName.Name + "s";
             dataTableAdaptor = new MySqlTableAdaptor(tableName);
             dataTable = dataTableAdaptor.GetTable();
             WrapperBindingSource.DataSource = dataTable;
-            this.errorProvider1.DataSource = this.WrapperBindingSource;
-            int defaultSelection = -1;
+            errorProvider1.DataSource = WrapperBindingSource;
             if (componentId.Current != null)
             {
                 WrapperBindingSource.Position = (int)componentId.Current;
             }
-            // TODO: Complete member initialization
             WrapperID.DataBindings.Add("Text", WrapperBindingSource, "ID");
             WrapperComboBox.DataSource = dataTable;
             WrapperComboBox.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
@@ -44,13 +37,19 @@ namespace GeneratedWF
             WrapperComboBox.DisplayMember = dataTable.Columns[1].ColumnName;
             WrapperComboBox.ValueMember = dataTable.Columns[0].ColumnName;
             //WrapperComboBox.DataSource = WrapperBindingSource;
-            WrapperComboBox.SelectedValueChanged += new EventHandler(WrapperComboBox_SelectedValueChanged);
-            WrapperComponentSelection.Click+=new EventHandler(WrapperComponentSelection_Click);
-            WrapperComboBox.Validated += new EventHandler(WrapperComboBox_Validated);
+            WrapperComboBox.SelectedValueChanged += WrapperComboBox_SelectedValueChanged;
+            WrapperComponentSelection.Click+=WrapperComponentSelection_Click;
+            WrapperComboBox.Validated += WrapperComboBox_Validated;
             WrapperLabel.Text = tableName.Name;
-            WrapperID.TextChanged += new EventHandler(WrapperID_TextChanged);
+            WrapperID.TextChanged += WrapperID_TextChanged;
             //WrapperComboBox.DataBin
-            this.type = tableName;
+            type = tableName;
+        }
+
+        public override sealed string Text
+        {
+            get { return base.Text; }
+            set { base.Text = value; }
         }
 
         void WrapperID_TextChanged(object sender, EventArgs e)
@@ -61,17 +60,6 @@ namespace GeneratedWF
             }
         }
 
-        
-
-        bool SetNullContent()
-        {
-            //((DataRowView)bindingSourceMain.Current).Row[type.Name + "P"] = 0;
-            //WrapperComboBox.SelectedValue = -1;
-            //WrapperComboBox.Text = "";
-            //WrapperBindingSource.MoveLast();
-            //WrapperID.Text = string.Empty;
-            return true;
-        }
 
         void WrapperComboBox_Validated(object sender, EventArgs e)
         {
@@ -100,15 +88,9 @@ namespace GeneratedWF
             }
         }
 
-        void WrapperComboBox_Validated(object sender, CancelEventArgs e)
-        {
-            
-        }
-
         void WrapperBindingSource_PositionChanged(object sender, EventArgs e)
         {
-
-            decimal selectedId = Convert.ToDecimal(((DataRowView)WrapperBindingSource.Current).Row[0]);
+            //decimal selectedId = Convert.ToDecimal(((DataRowView)WrapperBindingSource.Current).Row[0]);
             if (bindingSourceMain.Current != null && WrapperBindingSource.Current != null)
             {
                 ((DataRowView)bindingSourceMain.Current).Row[type.Name + "P"] = ((DataRowView)WrapperBindingSource.Current).Row[0];
@@ -136,7 +118,7 @@ namespace GeneratedWF
             }
         }
 
-        public void WrapperComponentSelection_Click(object sender, System.EventArgs e)
+        private void WrapperComponentSelection_Click(object sender, EventArgs e)
         {
             Program.CreateForm(type);
         }
