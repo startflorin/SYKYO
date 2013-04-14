@@ -16,6 +16,20 @@ namespace GeneratedWF
     {
         public DataTable dataTable;
         public ITableAdaptor dataTableAdaptor;
+        private bool dataTableIgnoreChanges ;
+
+        public void ReloadData()
+        {
+            bindingSource1.SuspendBinding();
+            dataTableIgnoreChanges = true;
+            dataTableAdaptor.FillTable(100);
+            dataTable = dataTableAdaptor.GetTable();
+            dataTableIgnoreChanges = false;
+            bindingSource1.ResumeBinding();
+            
+            //bindingSource1.EndEdit();
+        }
+
         public Form1(Type tableType)
         {
             InitializeComponent();
@@ -190,7 +204,10 @@ namespace GeneratedWF
 
         void HELP_ColumnChanged(object sender, DataColumnChangeEventArgs e)
         {
-            SetNewModeOfForm();
+            if (!dataTableIgnoreChanges)
+            {
+                SetNewModeOfForm();
+            }
         }
 
         void dataGridView1_SelectionChanged(object sender, EventArgs e)
@@ -225,11 +242,11 @@ namespace GeneratedWF
                     dataTableAdaptor.DeleteItem(Convert.ToDecimal(rowToDelete["ID"]));
                 }
                 dataTable.Rows[dataGridView1.SelectedRows[0].Index].Delete();
-                
             }
             bindingSource1.RaiseListChangedEvents = true;
             dataTable.AcceptChanges();
             RefreshTabEnability();
+            ReportChanges();
         }
 
         private void actionButtonCancel_Click(object sender, EventArgs e)
@@ -298,6 +315,7 @@ namespace GeneratedWF
             }
             dataTable.AcceptChanges();
             SetInitialModeOfForm();
+            ReportChanges();
         }
 
         int seq = 8990;
@@ -449,12 +467,16 @@ namespace GeneratedWF
             }
         }
 
-        private void button1_Click(object sender, System.EventArgs e)
+        private void ReportChanges()
         {
             XmlProcessor xmlProcessor = new XmlProcessor();
-            xmlProcessor.XMLSyncronixe(dataTableAdaptor);
+            string xml = xmlProcessor.XMLSyncronixe(dataTableAdaptor);
+            Console.SendXml(xml);
         }
 
-
+        private void button1_Click(object sender, System.EventArgs e)
+        {
+            ReportChanges();
+        }
     }
 }

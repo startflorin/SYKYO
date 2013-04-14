@@ -26,6 +26,7 @@ namespace GeneratedWF
         public event ChangedEventHandler Changed;
 
         public static string Message;
+
         protected virtual void OnChanged(EventArgs e)
         {
             if (Changed != null)

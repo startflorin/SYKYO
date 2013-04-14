@@ -229,7 +229,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource bindingSource1;
+        public System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button actionButtonNew;
         private System.Windows.Forms.Button actionButtonCopy;

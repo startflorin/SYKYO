@@ -117,7 +117,7 @@ namespace GeneratedWF
 
         void bindingSourceMain_PositionChanged(object sender, EventArgs e)
         {
-            if (((BindingSource) sender).Current == null)
+            if (((BindingSource)sender).Position<0 || ((BindingSource)sender).Current == null)
             {
                 return;
             }

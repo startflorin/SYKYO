@@ -224,6 +224,7 @@ namespace GeneratedWF
             try
             {
                 dr = MySqlTriggerCommand.ExecuteReader();
+                Table.Rows.Clear();
                 if (dr.HasRows)
                 {
                     while (dr.Read())
