@@ -1,8 +1,0 @@
-C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedDataModel\bin\Debug\GeneratedDataModel.exe.config
-C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedDataModel\bin\Debug\GeneratedDataModel.exe
-C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedDataModel\bin\Debug\GeneratedDataModel.pdb
-C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedDataModel\obj\Debug\GeneratedDataModel.csprojResolveAssemblyReference.cache
-C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedDataModel\obj\Debug\GeneratedDataModel.Properties.Resources.resources
-C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedDataModel\obj\Debug\GeneratedDataModel.csproj.GenerateResource.Cache
-C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedDataModel\obj\Debug\GeneratedDataModel.exe
-C:\Users\PROFIMEDICA\Documents\Visual Studio 2010\WindowsFormsApplication1\GeneratedDataModel\obj\Debug\GeneratedDataModel.pdb
