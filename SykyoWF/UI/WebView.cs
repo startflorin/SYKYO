@@ -265,6 +265,7 @@ namespace WindowsFormsApplication1
             List<SymbolID> rels = new List<SymbolID>();
             relationCollection.GetAllOperators();
             r2 = relationCollection.operatorCollection[0];
+            comboBox1.Items.Add("-All Operations-");
             foreach (OperatorID r in relationCollection.operatorCollection)
             {
                 comboBox1.Items.Add(r.Names[0]);
@@ -279,21 +280,25 @@ namespace WindowsFormsApplication1
         
         private string rootSymbol;
 
-        //static WebView(int symbolID)
-        //{
-        //    ActualID = new int[] { symbolID, 0 };
-        //}
+        WebView(int symbolID)
+        {
+            InitializeComponent();
+            PrepareRelations();
+            PrepareRelationsImageList();
+            ActualID = new int[] { symbolID, 0 };
+        }
         public WebView()
         {
             InitializeComponent();
             PrepareRelations();
+            PrepareRelationsImageList();
         }
 
         void attachLeaf(TreeNode root, SymbolID symbol, int level)
         {
 
             //prepare relation for leafs
-            SymbolID relation = (SymbolID)comboBox1.Tag;//new Relation(new int[] { 2, 100, 9998, 1 }); // simbol include leafs
+           // SymbolID relation = (SymbolID)comboBox1.Tag;//new Relation(new int[] { 2, 100, 9998, 1 }); // simbol include leafs
             //prepare leafs
             List<SymbolID> listSymbol = new List<SymbolID>();//=//  relationCollection.GetLeafsByRelation(symbol, relation);
             foreach (SymbolID leaf in listSymbol)
@@ -332,20 +337,23 @@ namespace WindowsFormsApplication1
 
         private void PrepareRelationsImageList()
         {
-            wantedMappedTitles.AddRange(new string[] { "namespace", "operator", "delegate", "constructor", "class", "structure", "interface", "enumeration", "Property", "Method", "Field", "Member", "Conversion", "Event" });
+            wantedMappedTitles.AddRange(new string[] { "Namespace", "Operator", "Delegate", "Constructor", "Class", "Structure", "Interface", "Enumeration", "Property", "Method", "Field", "Member", "Conversion", "Event" });
             foreach (string typ in wantedMappedTitles)
             {
-                iListe.Images.Add(new Icon("img\\"+typ + ".ico"));
+                iListe.Images.Add(new Icon("..\\..\\img\\"+typ + ".ico"));
             }
             treeView1.ImageList = iListe;
         }
 
         private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            return;
-            SymbolID rootSymbol = (SymbolID)(((TreeView)sender).SelectedNode.Tag);
-            RegenerateTree((TreeView)sender, rootSymbol);
-            textBox1.Text = rootSymbol.Location.A.ToString();
+            //return;
+            if (((TreeView)sender).SelectedNode != null && ((TreeView)sender).SelectedNode.Tag != null)
+            {
+                SymbolID rootSymbol = (SymbolID)(((TreeView)sender).SelectedNode.Tag);
+                RegenerateTree((TreeView)sender, rootSymbol);
+                textBox1.Text = rootSymbol.Location.A.ToString();
+            }
         }
 
         void RegenerateTree(TreeView treeView, SymbolID rootSymbol)
@@ -354,33 +362,47 @@ namespace WindowsFormsApplication1
             TreeNode root = treeView.Nodes.Add(rootSymbol.Names[0]);
             root.Tag = rootSymbol;
             //prepare relation for leafs
-            OperatorID relation = (OperatorID)comboBox1.Tag;//new Relation(new int[] { 2, 100, 9998, 1 }); // simbol include leafs
             //prepare leafs
-            List<SymbolID> listSymbol = relationCollection.GetLeafsByRelation(rootSymbol, relation);
-            List<SymbolID> listSymbol2 = new List<SymbolID>();
-            foreach (SymbolID leaf in listSymbol)
+            List<OperatorID> operatorIds = null;
+            if (comboBox1.Tag != null)
             {
-                listSymbol2.Add(symbolCollection.GetSymbolByID(leaf).FirstOrDefault());
+                operatorIds = relationCollection.operatorCollection;
             }
-            foreach (SymbolID leaf in listSymbol2)
+            else
             {
-                if (leaf == null) return;
-                TreeNode newRoot = root.Nodes.Add(leaf.Names[0]);
-                newRoot.Tag = leaf;
-                string type = "class";// logics.getFirstType(leaf).FirstOrDefault().Name;
-                while (type.IndexOf(' ') > 0)
-                type = type.Substring( type.IndexOf(' ')+1 );
-                newRoot.ImageIndex = wantedMappedTitles.IndexOf(type.ToLower());
-                //newRoot.ImageKey = wantedMappedTitles.IndexOf(type.ToLower());
-                attachLeaf(newRoot, leaf, 0);
+                OperatorID relation = (OperatorID)comboBox1.Tag;//new Relation(new int[] { 2, 100, 9998, 1 }); // simbol include leafs
+                operatorIds = new List<OperatorID> { relation };
+            }
+            int i =0;
+            foreach (OperatorID operatorId in operatorIds)
+            {
+                List<SymbolID> listSymbol = relationCollection.GetLeafsByRelation(rootSymbol, operatorId);
+                List<SymbolID> listSymbol2 = new List<SymbolID>();
+                foreach (SymbolID leaf in listSymbol)
+                {
+                    listSymbol2.Add(symbolCollection.GetSymbolByID(leaf).FirstOrDefault());
+                }
+                foreach (SymbolID leaf in listSymbol2)
+                {
+                    if (leaf == null) return;
+                    TreeNode newRoot = root.Nodes.Add(leaf.Names[0]);
+                    newRoot.Tag = leaf;
+                    string type = "class";// logics.getFirstType(leaf).FirstOrDefault().Name;
+                    while (type.IndexOf(' ') > 0)
+                        type = type.Substring(type.IndexOf(' ') + 1);
+                    newRoot.ImageIndex = i;
+                    //newRoot.ImageKey = wantedMappedTitles.IndexOf(type.ToLower());
+                    attachLeaf(newRoot, leaf, 0);
+                }
+                i++;
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int[] rootID = new int[] { 0, 0, 0, 0 };
-            int.TryParse(textBox1.Text, out rootID[0]); 
-            //=// RegenerateTree(treeView1, symbolCollection.GetSymbolByID(rootID).FirstOrDefault());
+            int A = 0;
+            int.TryParse(textBox1.Text.Trim(), out A);
+            RegenerateTree(treeView1, symbolCollection.GetSymbolByID(new SymbolID(new Location(A, 0))).FirstOrDefault());
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

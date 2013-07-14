@@ -21,7 +21,7 @@ using DataPersistency.UI.Logging;
 #endregion Composition
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         #region Variables
         // Loging Model
@@ -31,7 +31,7 @@ namespace WindowsFormsApplication1
         SymbolCollection symbolCollection = new SymbolCollection(serverAccess, logingOptionsModel);
         OperatorCollection operatorCollection = new OperatorCollection(serverAccess);
         SQLView loggingWindow = new SQLView();
-     //=//   WebView webWindow = new WebView();
+        WebView webWindow = new WebView();
         //ServerAccessInterface dataAccessinterface = new server
         //ServerAccess serverAccess = null;
         //FileAccess fileAccess = new FileAccess();
@@ -53,7 +53,7 @@ namespace WindowsFormsApplication1
         /// </summary>
         private void InitializeSettings()
         {
-            DataPersistency.DL.DynamicConfiguration.DatabaseOptionsController.SelectedDataProvider = "SqLite".ToString(); ;
+            DataPersistency.DL.DynamicConfiguration.DatabaseOptionsController.SelectedDataProvider = "MySql".ToString(); ;
             //DisplayTestConsole();
             //DisplayMSDNReader();
             modeToolStripMenuItem.SelectedText = "Evaluate";
@@ -84,7 +84,7 @@ namespace WindowsFormsApplication1
         /// <summary>
         /// Initialize form
         /// </summary>
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             //InitializeDatabaseSelector();
@@ -298,7 +298,7 @@ namespace WindowsFormsApplication1
         /// <param name="e"></param>
         private void wEBViewToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //=//webWindow.Show();
+            webWindow.Show();
         }
 
         /// <summary>
@@ -553,6 +553,11 @@ namespace WindowsFormsApplication1
             codeProcessor.Show();
             DiagramCreator.Form1 diagramCreator = new DiagramCreator.Form1();
             diagramCreator.Show();
+        }
+
+        private void QueryTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

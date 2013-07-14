@@ -37,7 +37,7 @@ namespace NaturalLanguageProcessor
             NaturalWriter naturalWriter = new NaturalWriter();
             string diagramSource = naturalWriter.ConvertToNaturalLanguage(codeElements);
             string applicationPath =
-            "C:\\Users\\PROFIMEDICA\\Documents\\Visual Studio 2010\\WindowsFormsApplication1\\NaturalLanguageProceessor\\NaturalFiles\\";
+            "P:\\SYKYO\\NaturalLanguageProceessor\\NaturalFiles\\";
             System.IO.StreamWriter file = new System.IO.StreamWriter(applicationPath + "default.php");
             file.AutoFlush = true;
             file.WriteLine("");

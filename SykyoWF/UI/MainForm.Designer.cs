@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -87,6 +87,7 @@
             this.QueryTextBox.Size = new System.Drawing.Size(317, 153);
             this.QueryTextBox.TabIndex = 1;
             this.QueryTextBox.Text = "The cat of my brother`s wife have 4 mounts";
+            this.QueryTextBox.TextChanged += new System.EventHandler(this.QueryTextBox_TextChanged);
             this.QueryTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.QueryTextBox_KeyUp);
             // 
             // EvaluateButton
@@ -457,7 +458,7 @@
             this.answaeTF.TabIndex = 13;
             this.answaeTF.Text = "";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -473,7 +474,7 @@
             this.Controls.Add(this.QueryTextBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = " ";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

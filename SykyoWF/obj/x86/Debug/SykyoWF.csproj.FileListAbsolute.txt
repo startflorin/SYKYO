@@ -129,9 +129,9 @@ P:\SYKYO\SykyoWF\obj\x86\Debug\WindowsFormsApplication1.UI.TestRelation.resource
 P:\SYKYO\SykyoWF\obj\x86\Debug\WindowsFormsApplication1.UI.TestServer.resources
 P:\SYKYO\SykyoWF\obj\x86\Debug\WindowsFormsApplication1.UI.TestSymbol.resources
 P:\SYKYO\SykyoWF\obj\x86\Debug\WindowsFormsApplication1.UI.WatchParameters.resources
-P:\SYKYO\SykyoWF\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
 P:\SYKYO\SykyoWF\obj\x86\Debug\WindowsFormsApplication1.MyCode.resources
 P:\SYKYO\SykyoWF\obj\x86\Debug\SykyoWF.Properties.Resources.resources
 P:\SYKYO\SykyoWF\obj\x86\Debug\WindowsFormsApplication1.WebView.resources
 P:\SYKYO\SykyoWF\obj\x86\Debug\GenerateResource.read.1.tlog
 P:\SYKYO\SykyoWF\obj\x86\Debug\GenerateResource.write.1.tlog
+P:\SYKYO\SykyoWF\obj\x86\Debug\WindowsFormsApplication1.MainForm.resources

@@ -33,7 +33,7 @@ namespace WindowsFormsApplication1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //ServerAccess serverAccess = new ServerAccess();
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
 
 

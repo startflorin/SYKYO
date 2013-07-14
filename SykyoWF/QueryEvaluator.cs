@@ -140,7 +140,7 @@ namespace WindowsFormsApplication1
             internalRepresentation = codePhrase.codeSanitize(internalRepresentation);
             if (mode < 2)
             {
-                Form1.CodeTextBoxText = internalRepresentation;
+                MainForm.CodeTextBoxText = internalRepresentation;
                 return HumanReadableResult;
             }
 

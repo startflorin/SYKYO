@@ -856,7 +856,8 @@ namespace DataPersistency.DL.ServerAccess
                 }
                 else
                 {
-                    commandString = "SELECT `e`, `f` FROM `" + DB + "`.`s" + symbolID.Location.A.ToString() + "` WHERE `a` = " + symbolID.Location.A + " AND `b` = " + symbolID.Location.B + " ";
+                    commandString = "SELECT `e`, `f` FROM `" + DB + "`.`s" + symbolID.Location.A.ToString() + "` WHERE `a` = " + symbolID.Location.A + " AND `b` = " + symbolID.Location.B + " AND `c` = " + operatorID.Location.IR +" AND `d` = " + operatorID.Location.Var + " ";
+                //    commandString = "SELECT `e`, `f` FROM `" + DB + "`.`s" + symbolID.Location.A.ToString() + "` WHERE `a` = " + symbolID.Location.A + " AND `b` = " + symbolID.Location.B + " ";
                 }
                 if (limitOfResults != 0) { commandString += " Limit " + limitOfResults; }
                 MySql.Data.MySqlClient.MySqlCommand mySqlCommand = new MySqlCommand(commandString, mySQLConnection);

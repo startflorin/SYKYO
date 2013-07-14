@@ -163,11 +163,11 @@
     <Compile Include="UI\WatchParameters.Designer.cs">
       <DependentUpon>WatchParameters.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Form1.cs">
+    <Compile Include="UI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\MyCode.cs">
       <SubType>Form</SubType>
@@ -208,8 +208,8 @@
     <EmbeddedResource Include="UI\WatchParameters.resx">
       <DependentUpon>WatchParameters.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MyCode.resx">
       <DependentUpon>MyCode.cs</DependentUpon>
@@ -283,7 +283,7 @@
     <Content Include="Documentation\Initialize SQL Server.txt" />
     <Content Include="Documentation\Initialize MySQL Server.txt" />
     <Content Include="Documentation\Initialize Oracle Server.txt" />
-    <Content Include="IMG\call.gif" />
+    <Content Include="IMG\Call.gif" />
     <Content Include="IMG\Class.gif" />
     <Content Include="IMG\Constructor.gif" />
     <Content Include="IMG\Conversion.gif" />
@@ -300,8 +300,8 @@
     <Content Include="IMG\Operator_default.gif" />
     <Content Include="IMG\Property.gif" />
     <Content Include="IMG\Structure.gif" />
-    <Content Include="IMG\sub.gif" />
-    <Content Include="IMG\variable - Copy.gif" />
+    <Content Include="IMG\Sub.gif" />
+    <Content Include="IMG\Variable.gif" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CodeProcessor\CodeProcessor.csproj">
