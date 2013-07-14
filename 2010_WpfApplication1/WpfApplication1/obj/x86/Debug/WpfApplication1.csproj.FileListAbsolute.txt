@@ -136,3 +136,7 @@ C:\15  School\SYKYO\2010_WpfApplication1\WpfApplication1\obj\x86\Debug\GenerateR
 C:\15  School\SYKYO\2010_WpfApplication1\WpfApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\15  School\SYKYO\2010_WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.exe
 C:\15  School\SYKYO\2010_WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.pdb
+P:\SYKYO\2010_WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.exe
+P:\SYKYO\2010_WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.pdb
+C:\Portables\SYKYO\2010_WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.exe
+C:\Portables\SYKYO\2010_WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.pdb

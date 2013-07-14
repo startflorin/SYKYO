@@ -14,7 +14,16 @@ namespace GeneratedWF
         /// <summary>
         /// Last message recived from self
         /// </summary>
-        public static string Message;
+        /// 
+        private static string message{
+        public static string Message{
+            get {return message;}
+            set{
+                richTextBox1.Text+=value+"\n";
+                message = value;
+            }
+        }
+        
 
         /// <summary>
         /// Console window constructor
@@ -59,7 +68,7 @@ namespace GeneratedWF
             Text = newState == State.IsClient ? "Client Console" : "Server Console";
             if (newState == State.IsClient)
             {
-                Close();
+                //Close();
             }
         }
 

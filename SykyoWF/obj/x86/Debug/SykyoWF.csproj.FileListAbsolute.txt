@@ -101,3 +101,6 @@ C:\15  School\SYKYO\SykyoWF\obj\x86\Debug\SykyoWF.Properties.Resources.resources
 C:\15  School\SYKYO\SykyoWF\obj\x86\Debug\WindowsFormsApplication1.WebView.resources
 C:\15  School\SYKYO\SykyoWF\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\15  School\SYKYO\SykyoWF\obj\x86\Debug\GenerateResource.write.1.tlog
+P:\SYKYO\SykyoWF\bin\Debug\SykyoWF.exe.config
+P:\SYKYO\SykyoWF\obj\x86\Debug\SykyoWF.exe
+P:\SYKYO\SykyoWF\obj\x86\Debug\SykyoWF.pdb
