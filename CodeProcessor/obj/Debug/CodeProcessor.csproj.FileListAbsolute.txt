@@ -21,3 +21,15 @@ C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\CodeProcessor\
 C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\CodeProcessor\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\CodeProcessor\obj\Debug\CodeProcessor.exe
 C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\CodeProcessor\obj\Debug\CodeProcessor.pdb
+P:\SYKYO\CodeProcessor\bin\Debug\CodeProcessor.exe.config
+P:\SYKYO\CodeProcessor\bin\Debug\CodeProcessor.exe
+P:\SYKYO\CodeProcessor\bin\Debug\CodeProcessor.pdb
+P:\SYKYO\CodeProcessor\bin\Debug\DataModel.exe
+P:\SYKYO\CodeProcessor\bin\Debug\DataModel.pdb
+P:\SYKYO\CodeProcessor\obj\Debug\ResolveAssemblyReference.cache
+P:\SYKYO\CodeProcessor\obj\Debug\CodeProcessor.Form1.resources
+P:\SYKYO\CodeProcessor\obj\Debug\CodeProcessor.Properties.Resources.resources
+P:\SYKYO\CodeProcessor\obj\Debug\GenerateResource.read.1.tlog
+P:\SYKYO\CodeProcessor\obj\Debug\GenerateResource.write.1.tlog
+P:\SYKYO\CodeProcessor\obj\Debug\CodeProcessor.exe
+P:\SYKYO\CodeProcessor\obj\Debug\CodeProcessor.pdb

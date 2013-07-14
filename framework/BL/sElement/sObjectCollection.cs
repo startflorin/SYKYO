@@ -10,6 +10,11 @@ namespace DataPersistency.DL.Collection
     public class SObjectCollection : AbstractCollection
     {
         //static ConditionModel.LoggingSystem.LoggingSystemOptions loggingSystemOptions = new ConditionModel.LoggingSystem.LoggingSystemOptions();
+        private static DataPersistency.DL.ServerAccess.ServerAccessInterface databaseAccess = new DataPersistency.DL.ServerAccess.ServerAccessMySQL(null);
+        public SObjectCollection()
+        {
+            databaseAccess.IsHumanReadable = true;
+        }
 
         private List<SymbolID> sObject = new List<SymbolID>();
         /// <summary>
@@ -47,12 +52,23 @@ namespace DataPersistency.DL.Collection
 
 
 
-        internal string ToString()
+        public string ToString()
         {
             StringBuilder collectionAsString = new StringBuilder();
             foreach (SymbolID element in sObject)
             {
-                collectionAsString.Append(element.ToString());
+                if (databaseAccess.IsHumanReadable)
+                {
+                    List<string> names = databaseAccess.GetSymbolNamesByID(element);
+                    foreach (string name in names)
+                    {
+                        collectionAsString.Append(name + " ");
+                    }
+                }
+                else
+                {
+                    collectionAsString.Append(element.ToString() + "; ");
+                }
             }
             return collectionAsString.ToString();
         }
@@ -79,7 +95,6 @@ namespace DataPersistency.DL.Collection
         /// <param name="method"></param>
         public void AddByName(string lastString, int mode)
         {
-            DataPersistency.DL.ServerAccess.ServerAccessInterface databaseAccess = new DataPersistency.DL.ServerAccess.ServerAccessMySQL(null);
             List<SymbolID> newObjects = databaseAccess.GetSymbolsByName(lastString, mode, 10);
             sObject.AddRange(newObjects);
         }

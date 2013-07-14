@@ -8,6 +8,11 @@ namespace DataPersistency.DL.ServerAccess
     public interface ServerAccessInterface
     {
         #region Properties
+        
+        /// <summary>
+        /// If is human readable all toString methods will return the human readable representation
+        /// </summary>
+        bool IsHumanReadable { get; set; }
 
         /// <summary>
         /// User rights for new symbol creation

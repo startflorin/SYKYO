@@ -25,3 +25,17 @@ C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\DiagramCreator
 C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\DiagramCreator\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\DiagramCreator\obj\Debug\DiagramCreator.exe
 C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\DiagramCreator\obj\Debug\DiagramCreator.pdb
+P:\SYKYO\DiagramCreator\bin\Debug\DiagramCreator.exe.config
+P:\SYKYO\DiagramCreator\bin\Debug\DiagramCreator.exe
+P:\SYKYO\DiagramCreator\bin\Debug\DiagramCreator.pdb
+P:\SYKYO\DiagramCreator\bin\Debug\DataModel.exe
+P:\SYKYO\DiagramCreator\bin\Debug\SystemInterface.exe
+P:\SYKYO\DiagramCreator\bin\Debug\DataModel.pdb
+P:\SYKYO\DiagramCreator\bin\Debug\SystemInterface.pdb
+P:\SYKYO\DiagramCreator\obj\Debug\ResolveAssemblyReference.cache
+P:\SYKYO\DiagramCreator\obj\Debug\DiagramCreator.Form1.resources
+P:\SYKYO\DiagramCreator\obj\Debug\DiagramCreator.Properties.Resources.resources
+P:\SYKYO\DiagramCreator\obj\Debug\GenerateResource.read.1.tlog
+P:\SYKYO\DiagramCreator\obj\Debug\GenerateResource.write.1.tlog
+P:\SYKYO\DiagramCreator\obj\Debug\DiagramCreator.exe
+P:\SYKYO\DiagramCreator\obj\Debug\DiagramCreator.pdb

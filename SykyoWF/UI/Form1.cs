@@ -53,7 +53,7 @@ namespace WindowsFormsApplication1
         /// </summary>
         private void InitializeSettings()
         {
-            DataPersistency.DL.DynamicConfiguration.DatabaseOptionsController.SelectedDataProvider = "MySql";
+            DataPersistency.DL.DynamicConfiguration.DatabaseOptionsController.SelectedDataProvider = "SqLite".ToString(); ;
             //DisplayTestConsole();
             //DisplayMSDNReader();
             modeToolStripMenuItem.SelectedText = "Evaluate";

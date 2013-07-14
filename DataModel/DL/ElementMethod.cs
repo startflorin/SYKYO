@@ -49,6 +49,16 @@ namespace DataModel.DL.CodeEntity
             set { result = value; }
         }
 
+        private string returnType;
+        /// <summary>
+        /// Start line number of the code element
+        /// </summary>
+        public string ReturnType
+        {
+            get { return returnType; }
+            set { returnType = value; }
+        }
+
         private string elementClassName = string.Empty;
         /// <summary>
         /// Start line number of the code element

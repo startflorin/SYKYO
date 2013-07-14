@@ -50,7 +50,7 @@ namespace DataPersistency.DL.ServerAccess
         /// <summary>
         /// Initiate connection
         /// </summary>
-        public ServerAccessSqLite()
+        public ServerAccessSqLite(string connectionString)
         {
             if (SqLiteConnection == null)
             {

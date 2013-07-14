@@ -39,7 +39,7 @@ namespace DataPersistency.UI.UserOptions
         {
             if (DatabaseOptionsController.serverAccess == null)
             {
-                DatabaseOptionsController.SelectedDataProvider = Provider.MySQL.ToString();
+                DatabaseOptionsController.SelectedDataProvider = Provider.SqLite.ToString();
             }
 
             string provider = DatabaseOptionsController.serverAccess.GetProviderName();

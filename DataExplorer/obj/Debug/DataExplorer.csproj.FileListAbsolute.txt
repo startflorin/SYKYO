@@ -21,3 +21,15 @@ C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\DataExplorer\o
 C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\DataExplorer\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\DataExplorer\obj\Debug\DataExplorer.exe
 C:\Users\florin.cumpanasu\Desktop\SCHOOL\WindowsFormsApplication1\DataExplorer\obj\Debug\DataExplorer.pdb
+P:\SYKYO\DataExplorer\bin\Debug\DataExplorer.exe.config
+P:\SYKYO\DataExplorer\bin\Debug\DataExplorer.exe
+P:\SYKYO\DataExplorer\bin\Debug\DataExplorer.pdb
+P:\SYKYO\DataExplorer\bin\Debug\DataModel.exe
+P:\SYKYO\DataExplorer\bin\Debug\DataModel.pdb
+P:\SYKYO\DataExplorer\obj\Debug\ResolveAssemblyReference.cache
+P:\SYKYO\DataExplorer\obj\Debug\DataExplorer.Form1.resources
+P:\SYKYO\DataExplorer\obj\Debug\DataExplorer.Properties.Resources.resources
+P:\SYKYO\DataExplorer\obj\Debug\GenerateResource.read.1.tlog
+P:\SYKYO\DataExplorer\obj\Debug\GenerateResource.write.1.tlog
+P:\SYKYO\DataExplorer\obj\Debug\DataExplorer.exe
+P:\SYKYO\DataExplorer\obj\Debug\DataExplorer.pdb

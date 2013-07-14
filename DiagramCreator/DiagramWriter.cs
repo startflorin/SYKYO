@@ -13,7 +13,7 @@ namespace DiagramCreator
         {
             string diagramSource = CreateFromProgram(program);
             string applicationPath =
-            "C:\\Users\\PROFIMEDICA\\Documents\\Visual Studio 2010\\WindowsFormsApplication1\\DiagramCreator\\DiagramFiles\\";
+            "P:\\SYKYO\\DiagramCreator\\DiagramFiles\\";
             System.IO.StreamWriter file = new System.IO.StreamWriter(applicationPath + "diagram.gv");
             file.AutoFlush = true;
             file.WriteLine("digraph n { splines=true; sep=\"+25,25\"; overlap=scalexy; nodesep=0.6; node [fontsize=11];");
@@ -28,7 +28,7 @@ namespace DiagramCreator
         {
             StringBuilder sb = new StringBuilder();
             string applicationPath =
-            "C:\\Users\\PROFIMEDICA\\Documents\\Visual Studio 2010\\WindowsFormsApplication1\\DiagramCreator\\DiagramFiles\\";
+            "P:\\SYKYO\\DiagramCreator\\DiagramFiles\\";
             foreach (CodeFile codeFile in program.CodeFiles)
             {
                 //using (StreamWriter sw = new StreamWriter(applicationRoot + "\\" + codeFile.FileName + ".cs", true))

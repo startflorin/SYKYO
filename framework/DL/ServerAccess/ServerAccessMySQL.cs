@@ -17,6 +17,12 @@ namespace DataPersistency.DL.ServerAccess
 
         #region Variables
         DataPersistency.BL.UserOptions.LoggingSystemOptions logingOptions = new BL.UserOptions.LoggingSystemOptions();
+
+        /// <summary>
+        /// isHumanReadable
+        /// </summary>
+        public bool IsHumanReadable { get; set; }
+
         public bool AcceptSymbols { get; set; }
         public bool AcceptOperators { get; set; }
         public bool AcceptRelations { get; set; }
@@ -212,7 +218,9 @@ namespace DataPersistency.DL.ServerAccess
                 System.Diagnostics.StackTrace stackTrace; System.Diagnostics.StackFrame fr; stackTrace = new System.Diagnostics.StackTrace(); fr = stackTrace.GetFrame(0);
                 thisMethod.ElementNamespaceName = this.GetType().Namespace;
                 thisMethod.ElementClassName = this.GetType().Name;
-                thisMethod.ElementName = stackTrace.GetFrame(0).GetMethod().ToString().Replace(stackTrace.GetFrame(0).GetMethod().Name.ToString(), "<span style='color: red'>" + stackTrace.GetFrame(0).GetMethod().Name.ToString() + "</span>");
+                string methodName = fr.GetMethod().ToString();
+                thisMethod.ElementName = fr.GetMethod().Name;
+                thisMethod.ReturnType = methodName.Substring(0, methodName.IndexOf(" "));
             }
             if (logLevel >= 2) // parameters
             {
@@ -320,7 +328,9 @@ namespace DataPersistency.DL.ServerAccess
                 System.Diagnostics.StackTrace stackTrace; System.Diagnostics.StackFrame fr; stackTrace = new System.Diagnostics.StackTrace(); fr = stackTrace.GetFrame(0);
                 thisMethod.ElementNamespaceName = this.GetType().Namespace;
                 thisMethod.ElementClassName = this.GetType().Name;
-                thisMethod.ElementName = stackTrace.GetFrame(0).GetMethod().ToString().Replace(stackTrace.GetFrame(0).GetMethod().Name.ToString(), "<span style='color: red'>" + stackTrace.GetFrame(0).GetMethod().Name.ToString() + "</span>");
+                string methodName = fr.GetMethod().ToString();
+                thisMethod.ElementName = fr.GetMethod().Name;
+                thisMethod.ReturnType = methodName.Substring(0, methodName.IndexOf(" "));
             }
             if (logLevel >= 2) // parameters
             {
@@ -415,7 +425,9 @@ namespace DataPersistency.DL.ServerAccess
                 System.Diagnostics.StackTrace stackTrace; System.Diagnostics.StackFrame fr; stackTrace = new System.Diagnostics.StackTrace(); fr = stackTrace.GetFrame(0);
                 thisMethod.ElementNamespaceName = this.GetType().Namespace;
                 thisMethod.ElementClassName = this.GetType().Name;
-                thisMethod.ElementName = stackTrace.GetFrame(0).GetMethod().ToString().Replace(stackTrace.GetFrame(0).GetMethod().Name.ToString(), "<span style='color: red'>" + stackTrace.GetFrame(0).GetMethod().Name.ToString() + "</span>");
+                string methodName = fr.GetMethod().ToString();
+                thisMethod.ElementName = fr.GetMethod().Name;
+                thisMethod.ReturnType = methodName.Substring(0, methodName.IndexOf(" "));
             }
             if (logLevel >= 2) // parameters
             {
@@ -510,7 +522,9 @@ namespace DataPersistency.DL.ServerAccess
                 System.Diagnostics.StackTrace stackTrace; System.Diagnostics.StackFrame fr; stackTrace = new System.Diagnostics.StackTrace(); fr = stackTrace.GetFrame(0);
                 thisMethod.ElementNamespaceName = this.GetType().Namespace;
                 thisMethod.ElementClassName = this.GetType().Name;
-                thisMethod.ElementName = stackTrace.GetFrame(0).GetMethod().ToString().Replace(stackTrace.GetFrame(0).GetMethod().Name.ToString(), "<span style='color: red'>" + stackTrace.GetFrame(0).GetMethod().Name.ToString() + "</span>");
+                string methodName = fr.GetMethod().ToString();
+                thisMethod.ElementName = fr.GetMethod().Name;
+                thisMethod.ReturnType = methodName.Substring(0, methodName.IndexOf(" "));
             }
             if (logLevel >= 2) // parameters
             {
@@ -597,7 +611,9 @@ namespace DataPersistency.DL.ServerAccess
                 System.Diagnostics.StackTrace stackTrace; System.Diagnostics.StackFrame fr; stackTrace = new System.Diagnostics.StackTrace(); fr = stackTrace.GetFrame(0);
                 thisMethod.ElementNamespaceName = this.GetType().Namespace;
                 thisMethod.ElementClassName = this.GetType().Name;
-                thisMethod.ElementName = stackTrace.GetFrame(0).GetMethod().ToString().Replace(stackTrace.GetFrame(0).GetMethod().Name.ToString(), "<span style='color: red'>" + stackTrace.GetFrame(0).GetMethod().Name.ToString() + "</span>");
+                string methodName = fr.GetMethod().ToString();
+                thisMethod.ElementName = fr.GetMethod().Name;
+                thisMethod.ReturnType = methodName.Substring(0, methodName.IndexOf(" "));
             }
             if (logLevel >= 2) // parameters
             {
@@ -675,7 +691,9 @@ namespace DataPersistency.DL.ServerAccess
                 System.Diagnostics.StackTrace stackTrace; System.Diagnostics.StackFrame fr; stackTrace = new System.Diagnostics.StackTrace(); fr = stackTrace.GetFrame(0);
                 thisMethod.ElementNamespaceName = this.GetType().Namespace;
                 thisMethod.ElementClassName = this.GetType().Name;
-                thisMethod.ElementName = stackTrace.GetFrame(0).GetMethod().ToString().Replace(stackTrace.GetFrame(0).GetMethod().Name.ToString(), "<span style='color: red'>" + stackTrace.GetFrame(0).GetMethod().Name.ToString() + "</span>");
+                string methodName = fr.GetMethod().ToString();
+                thisMethod.ElementName = fr.GetMethod().Name;
+                thisMethod.ReturnType = methodName.Substring(0, methodName.IndexOf(" "));
             }
             if (logLevel >= 2) // parameters
             {
@@ -782,7 +800,9 @@ namespace DataPersistency.DL.ServerAccess
                 System.Diagnostics.StackTrace stackTrace; System.Diagnostics.StackFrame fr; stackTrace = new System.Diagnostics.StackTrace(); fr = stackTrace.GetFrame(0);
                 thisMethod.ElementNamespaceName = this.GetType().Namespace;
                 thisMethod.ElementClassName = this.GetType().Name;
-                thisMethod.ElementName = stackTrace.GetFrame(0).GetMethod().ToString().Replace(stackTrace.GetFrame(0).GetMethod().Name.ToString(), "<span style='color: red'>" + stackTrace.GetFrame(0).GetMethod().Name.ToString() + "</span>");
+                string methodName = fr.GetMethod().ToString();
+                thisMethod.ElementName = fr.GetMethod().Name;
+                thisMethod.ReturnType = methodName.Substring(0, methodName.IndexOf(" "));
             }
             if (logLevel >= 2) // parameters
             {
@@ -887,7 +907,9 @@ namespace DataPersistency.DL.ServerAccess
                 System.Diagnostics.StackTrace stackTrace; System.Diagnostics.StackFrame fr; stackTrace = new System.Diagnostics.StackTrace(); fr = stackTrace.GetFrame(0);
                 thisMethod.ElementNamespaceName = this.GetType().Namespace;
                 thisMethod.ElementClassName = this.GetType().Name;
-                thisMethod.ElementName = stackTrace.GetFrame(0).GetMethod().ToString().Replace(stackTrace.GetFrame(0).GetMethod().Name.ToString(), "<span style='color: red'>" + stackTrace.GetFrame(0).GetMethod().Name.ToString() + "</span>");
+                string methodName = fr.GetMethod().ToString();
+                thisMethod.ElementName = fr.GetMethod().Name;
+                thisMethod.ReturnType = methodName.Substring(0, methodName.IndexOf(" "));
             }
             if (logLevel >= 2) // parameters
             {
@@ -1051,7 +1073,9 @@ namespace DataPersistency.DL.ServerAccess
                 System.Diagnostics.StackTrace stackTrace; System.Diagnostics.StackFrame fr; stackTrace = new System.Diagnostics.StackTrace(); fr = stackTrace.GetFrame(0);
                 thisMethod.ElementNamespaceName = this.GetType().Namespace;
                 thisMethod.ElementClassName = this.GetType().Name;
-                thisMethod.ElementName = stackTrace.GetFrame(0).GetMethod().ToString().Replace(stackTrace.GetFrame(0).GetMethod().Name.ToString(), "<span style='color: red'>" + stackTrace.GetFrame(0).GetMethod().Name.ToString() + "</span>");
+                string methodName = fr.GetMethod().ToString();
+                thisMethod.ElementName = fr.GetMethod().Name;
+                thisMethod.ReturnType = methodName.Substring(0, methodName.IndexOf(" "));
             }
             if (logLevel >= 2) // parameters
             {
@@ -1125,7 +1149,9 @@ namespace DataPersistency.DL.ServerAccess
                 System.Diagnostics.StackTrace stackTrace; System.Diagnostics.StackFrame fr; stackTrace = new System.Diagnostics.StackTrace(); fr = stackTrace.GetFrame(0);
                 thisMethod.ElementNamespaceName = this.GetType().Namespace;
                 thisMethod.ElementClassName = this.GetType().Name;
-                thisMethod.ElementName = stackTrace.GetFrame(0).GetMethod().ToString().Replace(stackTrace.GetFrame(0).GetMethod().Name.ToString(), "<span style='color: red'>" + stackTrace.GetFrame(0).GetMethod().Name.ToString() + "</span>");
+                string methodName = fr.GetMethod().ToString();
+                thisMethod.ElementName = fr.GetMethod().Name;
+                thisMethod.ReturnType = methodName.Substring(0, methodName.IndexOf(" "));
             }
             if (logLevel >= 2) // parameters
             {

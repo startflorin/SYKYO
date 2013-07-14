@@ -15,8 +15,8 @@ namespace DataPersistency.UI.Logging
 
         // the logging system regerence
         //LoggingSystem.LoggingSystem. = new LoggingSystem.LoggingSystem();
-        static string uri = "file:///C:/Users/PROFIMEDICA/Documents/Visual%20Studio%202010/WindowsFormsApplication1/Framework/Files/Logs/FrameworkLog.html";
-        static string fileName = "../../../Framework/Files/Logs/FrameworkLog.html";
+        static string uri = "file:///C:/Logs/FrameworkLog.html";
+        static string fileName = "c:/Logs/FrameworkLog.html";
         static TextWriter tw = new StreamWriter(fileName);
         
         #endregion VARIABLES
@@ -30,13 +30,14 @@ namespace DataPersistency.UI.Logging
             InitializeComponent();
             // initialize custom layout
             InitializeCustomLayout();
-            LoggingSystem.log.PropertyChanged += new PropertyChangedEventHandler(Log_PropertyChanged);
+            DataPersistency.DL.Logging.Log.PropertyChanged += Log_PropertyChanged;
             //LoggingSystem.LoggingSystem. += new PropertyChangedEventHandler(Log_PropertyChanged);
             tw.WriteLine("<style>");
             tw.WriteLine(".critical {width:100%; text-align:center; color:blue; background-color: yellow;} ");
-            tw.WriteLine(".CodeElementNamespace{color:silver} ");
-            tw.WriteLine(".CodeElementClass{color:red} ");
-            tw.WriteLine(".CodeElementMethod{color:yellow}");
+            tw.WriteLine(".CodeElementNamespace{color:gray; } ");
+            tw.WriteLine(".CodeElementClass{color:green;} ");
+            tw.WriteLine(".ReturnType{color:silver} ");
+            tw.WriteLine(".CodeElementMethod{color:red;  font-weight:bold;}");
             tw.WriteLine(".CodeElementParameter{color:orange}");
             tw.WriteLine(".CodeElementValue{color:green}");
             tw.WriteLine(".value{color:magenta}");
@@ -96,7 +97,7 @@ namespace DataPersistency.UI.Logging
             StringBuilder result = new StringBuilder();
             
             //if(!string.IsNullOrEmpty(method.Result)) result.Append("======================" + "<br>" + Environment.NewLine);
-            if (method.ElementClassName.Length>2) result.Append("<span class='CodeElementNamespace'>" + method.ElementNamespaceName + "</span>&gt; <span class='CodeElementClass'>" + method.ElementClassName + "</span> <span class='CodeElementMethod'>" + method.ElementName + "</span><br>" + Environment.NewLine);
+            if (method.ElementClassName.Length > 2) result.Append("<span class='CodeElementNamespace'>" + method.ElementNamespaceName + "</span>&gt; <span class='CodeElementClass'>" + method.ElementClassName + "</span> <span class='CodeElementMethod'>" + method.ElementName + "</span><span class='ReturnType'>" + method.ReturnType + "</span> <br>" + Environment.NewLine);
             string parameters = string.Empty;
             if (method.Parameters != null)
             foreach (string[] parameter in method.Parameters)
@@ -230,22 +231,22 @@ namespace DataPersistency.UI.Logging
                 button2.Text = "SQL";
             }
 
-            if (ServerAccessOracle.OracleTrace)
+            if (ServerAccessMySQL.MySqlTrace)
             {
-                if (ServerAccessOracle.MyResultsTrace)
+                if (ServerAccessMySQL.MyResultsTrace)
                 {
-                    ServerAccessOracle.OracleTrace = ServerAccessOracle.MyResultsTrace = !ServerAccessOracle.MyResultsTrace;
+                    ServerAccessMySQL.MySqlTrace = ServerAccessMySQL.MyResultsTrace = !ServerAccessMySQL.MyResultsTrace;
                     button2.Text = "no-SQL";
                 }
                 else
                 {
-                    ServerAccessOracle.MyResultsTrace = !ServerAccessOracle.MyResultsTrace;
+                    ServerAccessMySQL.MyResultsTrace = !ServerAccessMySQL.MyResultsTrace;
                     button2.Text = "SQL+Results";
                 }
             }
             else
             {
-                ServerAccessOracle.OracleTrace = true;
+                ServerAccessMySQL.MySqlTrace = true;
                 button2.Text = "SQL";
             }
         }

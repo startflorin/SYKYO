@@ -15,7 +15,7 @@ namespace GeneratedWF
         /// Last message recived from self
         /// </summary>
         /// 
-        private static string message{
+        private static string message;
         public static string Message{
             get {return message;}
             set{

@@ -8,6 +8,7 @@ using DataModel.DL.CodeEntity;
 namespace DataPersistency.DL.Logging
 {
     #region STATIC
+    public delegate void PropertyChangedEventHandler(object sender, PropertyChangedEventArgs e);
 
     public static class LoggingSystem
     {
@@ -54,7 +55,7 @@ namespace DataPersistency.DL.Logging
     #endregion STATIC
 
     #region NOTIFY
-    public class    Log : INotifyPropertyChanged
+    public class    Log
     {
 
         #region PROPERTY
@@ -123,16 +124,13 @@ namespace DataPersistency.DL.Logging
         #endregion PROPERTY
 
         #region EVENT
-
-        // Declare the event
-        public event PropertyChangedEventHandler PropertyChanged;
+        public static event PropertyChangedEventHandler PropertyChanged;
         // Create the OnPropertyChanged method to raise the event
         protected void OnPropertyChanged(string name)
         {
-            PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler != null)
+            if (PropertyChanged != null)
             {
-                handler(this, new PropertyChangedEventArgs(name));
+                PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
 

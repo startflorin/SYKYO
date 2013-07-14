@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.IO;
+using System;
 
 namespace SystemInterface
 {
@@ -35,17 +36,23 @@ namespace SystemInterface
         /// <returns>execution output</returns>
         public string Execute(string outputFile)
         {
-            process.Start();
-            process.WaitForExit();
-            string error = process.StandardError.ReadToEnd();
             string output = "";
-            //string output = process.StandardOutput.ReadToEnd();
-            /*
-            Stream OutputStream = new FileStream(outputFile, FileMode.OpenOrCreate, FileAccess.Write);
-            System.IO.BinaryWriter file = new System.IO.BinaryWriter(OutputStream);
-            file.Write(process.StandardOutput.ReadToEnd());
-            file.Close();
-             * */
+            try
+            {
+                process.Start();
+                process.WaitForExit();
+                string error = process.StandardError.ReadToEnd();
+                //string output = process.StandardOutput.ReadToEnd();
+                /*
+                Stream OutputStream = new FileStream(outputFile, FileMode.OpenOrCreate, FileAccess.Write);
+                System.IO.BinaryWriter file = new System.IO.BinaryWriter(OutputStream);
+                file.Write(process.StandardOutput.ReadToEnd());
+                file.Close();
+                 * */
+            }
+            catch(Exception x)
+            {
+            }
             return output;
         }
     }

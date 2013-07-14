@@ -38,3 +38,17 @@ C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.Properties.Resources.r
 C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.SimulationBand.resources
 C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\15  School\SYKYO\GeneratedWF\obj\x86\Debug\GenerateResource.write.1.tlog
+P:\SYKYO\GeneratedWF\bin\Debug\GeneratedWindowsFormsApplication.exe
+P:\SYKYO\GeneratedWF\bin\Debug\GeneratedWindowsFormsApplication.pdb
+P:\SYKYO\GeneratedWF\bin\Debug\Oracle.DataAccess.dll
+P:\SYKYO\GeneratedWF\bin\Debug\ZedGraph.dll
+P:\SYKYO\GeneratedWF\obj\x86\Debug\ResolveAssemblyReference.cache
+P:\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.Console.resources
+P:\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.DataWraper.resources
+P:\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.Form1.resources
+P:\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.Properties.Resources.resources
+P:\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWF.SimulationBand.resources
+P:\SYKYO\GeneratedWF\obj\x86\Debug\GenerateResource.read.1.tlog
+P:\SYKYO\GeneratedWF\obj\x86\Debug\GenerateResource.write.1.tlog
+P:\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWindowsFormsApplication.exe
+P:\SYKYO\GeneratedWF\obj\x86\Debug\GeneratedWindowsFormsApplication.pdb

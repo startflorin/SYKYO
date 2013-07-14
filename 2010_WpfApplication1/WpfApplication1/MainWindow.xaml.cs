@@ -27,12 +27,15 @@ namespace WpfApplication1
     /// </summary>
     public partial class MainWindow : Window
     {
-HierarchyExplorer tmp = new HierarchyExplorer();
-ObjectExplorer objectExplorer = new ObjectExplorer();
-  
+        HierarchyExplorer tmp = new HierarchyExplorer();
+        ObjectExplorer objectExplorer = new ObjectExplorer();
+        static DataPersistency.UI.Logging.SQLView mySqlView = null;
 
         public MainWindow() 
         {
+            mySqlView = new DataPersistency.UI.Logging.SQLView();
+            mySqlView.Show();
+            
             InitializeComponent();
             tmp.Show();
             objectExplorer.Show();
@@ -40,7 +43,7 @@ ObjectExplorer objectExplorer = new ObjectExplorer();
 
         private void richTextBox1_TextChanged(object sender, TextChangedEventArgs e) 
         {
-
+            
             string lastString = GetInput(richTextBox1).Trim();
             EDocument document = new EDocument(lastString);
             //document.ParseDocument();
@@ -48,15 +51,16 @@ ObjectExplorer objectExplorer = new ObjectExplorer();
             codeDocument.ParseAsCode();
             //webBrowser1.Document.Blocks.Clear();
             string strHtml = "test";
-            const string strAddress = "C:\\old\\ParsedCode.html";
-            using (StreamWriter sw = new StreamWriter(strAddress))
+            string fileName = "C:\\logs\\ParsedCode.html";
+            FileStream fileStream = File.Create(fileName); fileStream.Close();
+            using (StreamWriter sw = new StreamWriter(fileName))
             {
                 sw.Write(codeDocument.ToString());
                 sw.WriteLine();
                 sw.Flush();
 
 
-            } webBrowser1.Navigate("file:///C:/old/ParsedCode.html");
+            } webBrowser1.Navigate("file:///C:/logs/ParsedCode.html");
             TreeViewItem rootItem = new TreeViewItem();
             rootItem.Tag = codeDocument.RootTocken;
             rootItem.Header = "rooot";
@@ -70,6 +74,7 @@ ObjectExplorer objectExplorer = new ObjectExplorer();
             string g = document.ToString();
             SObjectCollection objectCollection = new SObjectCollection();
             SOperatorCollection operatorCollection = new SOperatorCollection();
+            
             objectCollection.Clear();
             operatorCollection.Clear();
             if (!string.IsNullOrEmpty(lastString))
@@ -80,7 +85,7 @@ ObjectExplorer objectExplorer = new ObjectExplorer();
                     from = lastString.LastIndexOf(" ");
                     lastString = lastString.Substring(from).Trim();
                 }
-                // Mabe is a symbol
+                // Mabe is an operator
                 operatorCollection.AddByName(lastString);
                 if (operatorCollection.SOperator.Count < 1)
                 {
@@ -96,11 +101,18 @@ ObjectExplorer objectExplorer = new ObjectExplorer();
             // Add paragraphs to the FlowDocument.
             if (operatorCollection.SOperator.Count > 0)
             {
-                myFlowDoc.Blocks.Add(new Paragraph(new Run(operatorCollection.ToString())));
+                myFlowDoc.Blocks.Add(new Paragraph(new Bold(new Run(operatorCollection.ToString())))
+                {
+                    Foreground = Brushes.Blue
+                });
             }
+            
             if (objectCollection.SObject.Count > 0)
             {
-                myFlowDoc.Blocks.Add(new Paragraph(new Run(objectCollection.ToString())));
+                myFlowDoc.Blocks.Add(new Paragraph(new Bold(new Run(objectCollection.ToString())))
+                {
+                    Foreground = Brushes.Red
+                });
             }
             RichTextBox myRichTextBox = new RichTextBox();
 
@@ -125,7 +137,7 @@ ObjectExplorer objectExplorer = new ObjectExplorer();
 
         private void richTextBox3_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
             string lastString = GetInput(richTextBox3).Trim();
 
             SObjectCollection objectCollection = new SObjectCollection();
@@ -174,7 +186,7 @@ ObjectExplorer objectExplorer = new ObjectExplorer();
             document.EvaluateDocument();
             //webBrowser1.Document.Blocks.Clear();
             string strHtml = "test";
-            const string strAddress = "C:\\old\\ParsedSentence.html";
+            const string strAddress = "C:\\logs\\ParsedSentence.html";
             using (StreamWriter sw = new StreamWriter(strAddress))
             {
                 sw.Write(document.ToString());
@@ -184,7 +196,7 @@ ObjectExplorer objectExplorer = new ObjectExplorer();
 
             }
             
-            webBrowser1.Navigate("file:///C:/old/ParsedSentence.html");
+            webBrowser1.Navigate("file:///C:/logs/ParsedSentence.html");
             TreeViewItem rootItem = new TreeViewItem();
             rootItem.Tag = document.RootTocken;
             rootItem.Header = "rooot";

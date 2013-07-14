@@ -9,11 +9,13 @@ namespace DataPersistency.DL.Collection
 {
     public class SOperatorCollection : AbstractCollection
     {
-        //static ConditionModel.LoggingSystem.LoggingSystemOptions loggingSystemOptions = new ConditionModel.LoggingSystem.LoggingSystemOptions();
+        private static DataPersistency.DL.ServerAccess.ServerAccessInterface databaseAccess = new DataPersistency.DL.ServerAccess.ServerAccessMySQL(null);
+        public SOperatorCollection()
+        {
+            databaseAccess.IsHumanReadable = true;
+        }
 
-        static DataPersistency.DL.ServerAccess.ServerAccessInterface databaseAccess = new DataPersistency.DL.ServerAccess.ServerAccessMySQL(null);
         
-
         private List<OperatorID> sOperator = new List<OperatorID>();
         /// <summary>
         /// List of objects
@@ -33,12 +35,23 @@ namespace DataPersistency.DL.Collection
 
         #region TO STRING
 
-        internal string ToString()
+        public string ToString()
         {
             StringBuilder collectionAsString = new StringBuilder();
             foreach (OperatorID element in sOperator)
             {
-                collectionAsString.Append(element.ToString()+"; ");
+                if (databaseAccess.IsHumanReadable)
+                {
+                    List<string> names = databaseAccess.GetOperatorNamesByID(element);
+                    foreach (string name in names)
+                    {
+                        collectionAsString.Append(name + " ");
+                    }
+                }
+                else
+                {
+                    collectionAsString.Append(element.ToString() + "; ");
+                }
             }
             return collectionAsString.ToString();
         }
